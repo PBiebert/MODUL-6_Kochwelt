@@ -2,7 +2,7 @@
   /* Farbe */
   --grey: #dbdbdb;
   --footerColor: #242424;
-  --buttonColor: #460f5d;
+  --buttonColor: #008000;
 
   /* Schriftarten */
   --primaryFont: "Raleway", sans-serif;
@@ -47,4 +47,71 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 8px;
+  height: 144px;
+}
+
+
+.link {
+  font-family: var(--primaryFont);
+  font-weight: 700;
+  font-size: 24px;
+  gap: 30px;
+  display: flex;
+  align-items: flex-end;
+}
+
+
+.links_menu {
+  text-decoration: none;
+}
+
+.links_menu:hover {
+  text-decoration: underline 5px solid;
+  text-underline-offset: 12px;
+  text-decoration-thickness: 6px;
+  color: #008000;
+}
+
+.header_line {
+  border: 1px solid;
+  padding: 0;  
+  box-shadow: 4px 4px 5px #888888;
+  color: #fff;
+}
+
+footer {
+  background-color: var(--footerColor);
+  height: 244px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.footer_logo {
+  height: 90px;
+  object-fit: contain;
+}
+
+.social_media {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.social_media_group {
+display: flex;
+gap: 25px;
 }
