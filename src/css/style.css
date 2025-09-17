@@ -1,0 +1,44 @@
+:root {
+  /* Farbe */
+  --primaryColor: #ffff;
+  --secondaryColor: #0000;
+  --primaryBackgroundColor: #000000;
+  --secondaryBackgroundColor: #272727;
+  --TertiaryBackgroundColor: #272727;
+
+  /* Schriftarten */
+  --fontFamilyPrimary: sans-serif;
+  --fontFamilySecondary: sans-serif;
+
+  /* Margin */
+  --mg-s: 1rem;
+  --mg-m: 2rem;
+  --mg-l: 3rem;
+  --mg-xl: 4rem;
+  --mg-xxl: 5rem;
+
+  /* Padding */
+  --pd-s: 1rem;
+  --pd-m: 2rem;
+  --pd-l: 3rem;
+  --pd-xl: 4rem;
+  --pd-xxl: 5rem;
+}
+
+/* Grundeinstellungen für alle Elemente */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid red; Dev */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Text-Grundlagen */
+body {
+  font-size: 16px; /* nur für Programierung, Später löschen  */
+  font-family: var(--fontFamilyPrimary); /* Standartschriftart*/
+}
