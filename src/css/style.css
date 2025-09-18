@@ -48,3 +48,46 @@ h3 {
   flex-direction: column;
   align-items: center;
 }
+
+.rezept_des_tages {
+  background-color: white;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  /* position: absolute; */
+  display: flex;
+  flex-direction: row;
+  align-items:flex-start;
+  justify-content:flex-start;
+  padding: 100px 250px 100px 250px;
+  /* top: 0;
+  right: 0;
+  left: 0; */
+  /* justify-content: space-between; */
+  /* align-items: flex-end; */
+}
+
+.hero_img {
+  height: 40%;
+  width: 40%;
+  padding-right: 32px;
+}
+
+.hero_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 12px;
+  
+}
+
+.button {
+  background-color: green;
+  width: 170px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 16px;
+  margin-top: 16px;
+}
