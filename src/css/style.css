@@ -59,7 +59,9 @@ header {
   height: 144px;
 }
 
-
+.link_resp {
+  display: none;
+}
 .link {
   font-family: var(--primaryFont);
   font-weight: 700;
@@ -114,4 +116,9 @@ footer {
 .social_media_group {
 display: flex;
 gap: 25px;
+}
+
+@media(max-width:1280px){
+
+ 
 }
