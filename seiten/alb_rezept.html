@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Albanischer Salat</title>
+
+  <!-- Linken zu style.css und alb_rezept.css -->
+  <link rel="stylesheet" href="src/css/style.css">
+  <link rel="stylesheet" href="../seiten/alb_rezept.css">
+</head>
+
+<body>
+  <header>
+
+  </header>
+    <main class="alb_salat">
+      <article>
+        <header>
+          <h1>Albanischer Salat (Sallatë Shqiptare)</h1>
+          <img class="alb_salat_img" src="/src/img/salad.jpg" alt="Photo Albanischer Salat">
+        </header>
+        <div class="meta">
+          <span class="badge"><img src="/src/img/clock-regular.svg" alt="Clock Image"> 15 Min.</span>
+          <span class="badge"><img src="/src/img/brain-solid.svg" alt="Brain Image"> simpel</span>
+          <span class="badge"><img src="/src/img/calendar-alt-regular.svg" alt="Calendar Image"> 28.09.2020</span>
+        </div>
+      <section>
+      <!-- Zutaten + Portionen-Form -->
+      <div class="ingredients">
+        <form id="portionForm"  onsubmit="return false;">
+          <label>Zutaten für
+            <input id="servings" type="number" min="1" value="4">
+          </label>
+          <button id="applyPortions" type="button">Portionen</button>
+        </form>
+      </section>
+      <section>
+         <!-- Basis-Anzahl der Portionen angeben (für Skalierung) -->
+      <ul id="ingredientList" data-base-servings="4">
+        <!-- data-base-qty = Menge für die Basis-Portionen (4), data-unit = Einheit -->
+        <li class="ingredient" data-base-qty="1"   data-unit="Stk">Salatgurke(n)</li>
+        <li class="ingredient" data-base-qty="2"   data-unit="Stk">Paprikaschote(n), rot und grün</li>
+        <li class="ingredient" data-base-qty="500" data-unit="g">Tomaten</li>
+        <li class="ingredient" data-base-qty="2"   data-unit="Stk">Zwiebeln</li>
+        <li class="ingredient" data-base-qty="200" data-unit="g">Schafskäse</li>
+        <li class="ingredient">Salz und Pfeffer</li> <!-- keine Menge -->
+        <li class="ingredient" data-base-qty="125" data-unit="ml">Olivenöl</li>
+        <li class="ingredient">Oregano</li>
+      </ul>
+      </section>
+      <aside>
+
+      </aside>
+      </article>
+    </main>
+   
+    
+
+  <footer>
+     <!-- Wird von Hauptseite genommen-->
+  </footer>
+</body>
+</html>
