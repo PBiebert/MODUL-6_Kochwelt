@@ -49,6 +49,7 @@ h3 {
   align-items: center;
 }
 
+/* Anfang der Section Rezept des Tages */
 .rezept_des_tages {
   background-color: white;
   background-position: center;
@@ -59,7 +60,7 @@ h3 {
   flex-direction: row;
   align-items:flex-start;
   justify-content:flex-start;
-  padding: 100px 250px 100px 250px;
+  /* padding: 100px 250px 100px 250px; */
   /* top: 0;
   right: 0;
   left: 0; */
@@ -68,9 +69,14 @@ h3 {
 }
 
 .hero_img {
-  height: 40%;
-  width: 40%;
+  height: 300px;
+  width: 450px;
   padding-right: 32px;
+  display: block;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 10px 0;
+  
 }
 
 .hero_info {
@@ -91,3 +97,5 @@ h3 {
   padding: 16px;
   margin-top: 16px;
 }
+/* Ende der Section Rezept des Tages */
+
