@@ -1,0 +1,31 @@
+h1 {
+    font-family: "Raleway", sans-serif;
+}
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px;
+}
+
+p {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+}
+a {
+    font-family: "Raleway", sans-serif;
+    font-style: italic;
+    color: #242424;
+}
+
+a:hover {
+    color: #008000;
+    cursor: pointer;
+}
+
+shadow {
+.shadow {
+  box-shadow: 1px 3px 13px #333;
+}
+}

@@ -1,75 +1,252 @@
 * {
-  margin: 0;
+  margin: 0px;
 }
 
 body {
-padding-top: 150px;
-  font-family: "Raleway" , sans-serif;
+  font-family: "Raleway", sans-serif;
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+}
+.contact {
+  padding: 24px 0 24px 0;
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 8px;
+  height: 144px;
+}
+
+.burger_menu {
+  display: none;
+}
+
+.link {
+  font-family: var(--primaryFont);
+  font-weight: 700;
+  font-size: 24px;
+  gap: 30px;
+  display: flex;
+  align-items: flex-end;
+}
+
+
+.links_menu {
+  text-decoration: none;
+}
+
+.links_menu:hover {
+  text-decoration: underline 5px solid;
+  text-underline-offset: 12px;
+  text-decoration-thickness: 6px;
+  color: #008000;
+}
+
+.header_line {
+  border: 1px solid;
+  padding: 0;  
+  box-shadow: 4px 4px 5px #888888;
+  color: #fff;
+}
+form {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  padding: 50px;
 }
 
-h1 {
-    font-family: "Raleway" , sans-serif;
-    font-weight: bold;
-    font-size: 34px;
-    padding-bottom: 20px;
-    color: #333;
-}
-
-.contact {
-  display: flex;
-  padding: 24px 0 24px 0;
-   gap: 20px;
-}
-
-form {
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-}
-
-h4 {
-padding-bottom: 10px;
-text-align: center;
-}
 .contact_background {
   background-color: #f6f6f6;
-  height: 560px;
-  width: 560px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact_date {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  gap: 15px;
 }
 
-.message_box {
+#message {
   width: 445px;
   height: 197px;
 }
 
+label {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 19px;
+}
+
 .box {
-    width: 200px;   
+  width: 200px;
+  height: 25px;
+  border-color: #9e9b9b;
 }
 
 .shadow {
   box-shadow: 1px 3px 13px #333;
-  border-color: currentColor;
 }
 
 .btn {
-    font-family: "Raleway" , sans-serif;
-    font-weight: 700;
-    padding: 0 30px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 5px 30px;
+  height: 30px;
 }
 
 .btn:hover {
-    background-color: #008000;
-    cursor: pointer;
-    
+  background-color: #008000;
+  cursor: pointer;
+  color: #f6f6f6;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.message_box {
+  margin-bottom: 24px;
 }
 
 .send {
   border-color: currentColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input:invalid, textarea:valid {
+  border: 2px solid #3033;
+}
+
+footer {
+  background-color: var(--footerColor);
+  height: 244px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.footer_logo {
+  height: 90px;
+  object-fit: contain;
+}
+
+.social_media {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.social_media_group {
+display: flex;
+gap: 25px;
+}
+
+@media (max-width: 800px) {
+  #message {
+    width: 400px;
+    height: 175px;
+  }
+  .box {
+    width: 180px;
+  }
+  p {
+    font-size: 35;
+  }
+}
+
+@media (max-width: 750px) {
+  #message {
+    width: 300px;
+    height: 175px;
+  }
+  .box {
+    width: 130px;
+  }
+  p {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 660px) {
+  .contact {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  #message {
+    width: 300px;
+    height: 200px;
+  }
+  .contact_background {
+    width: 282px;
+  }
+  p {
+    font-size: 26px;
+    padding-top: 20px;
+  }
+  #message {
+    width: 200px;
+    height: 155px;
+  }
+
+  .btn {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 530px) {
+  p {
+    font-size: 20px;
+  }
+  #message {
+    width: 140px;
+  }
+  label {
+    font-size: 16px;
+  }
+  .btn {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 384px) {
+  #message {
+    width: 240px;
+  }
+  p {
+    font-size: 26px;
+  }
+
+  .contact_date {
+    gap: 9px;
+  }
+
+  .contact_background {
+    width: 300px;
+  }
 }

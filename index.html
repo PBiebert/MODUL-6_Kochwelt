@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kochwelt</title>
+    <link rel="shortcut icon" href="./src/img/logo.png" type="image/x-icon" />
 
     <!-- Fonts extern einbinden -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,76 +14,168 @@
       rel="stylesheet"
     />
     <!-- CSS einbinden -->
-    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <script src="burger_menu.js"></script>
+    <link rel="icon" type="image/small_png" href="./src/img/logo_small.png" />
   </head>
+
   <body>
-    <main>
-      <!-- ======================================================================================== -->
-      <!-- Section "Lust auf mehr PB" -->
-      <section class="more">
-        <div class="container more">
-          <h2>Lust auf was Neues?</h2>
-          <!-- Rezepte -->
-          <!-- #1 -->
-          <div class="recipeRow">
-            <figure class="recipe">
-              <a href="#">
-                <div class="imgContainer">
-                  <img src="src/img/croissant.jpg" alt="" />
-                </div>
-              </a>
-              <figcaption>Rezept Altin</figcaption>
-            </figure>
-
-            <!-- #2 -->
-            <figure class="recipe">
-              <a href="#">
-                <div class="imgContainer">
-                  <img src="src/img/croissant.jpg" alt="" />
-                </div>
-              </a>
-              <figcaption>Rezept Refiye</figcaption>
-            </figure>
-
-            <!-- #3 -->
-            <figure class="recipe">
-              <a href="#">
-                <div class="imgContainer">
-                  <img src="src/img/croissant.jpg" alt="" />
-                </div>
-              </a>
-              <figcaption>Rezept Philipp</figcaption>
-            </figure>
-          </div>
+    <!-- Navigationsleiste Web -->
+    <header>
+      <img class="logo" src="./src/img/logo.png" alt="Kochwelt Logo" />
+      <nav class="nav_link">
+        <div class="link">
+          <a class="links_menu" href="">Start</a>
+          <a class="links_menu" href="">Rezept der Tages</a>
+          <a class="links_menu" href="">Kontakt</a>
+          <a class="links_menu" href="">Impressum</a>
         </div>
-      </section>
+      </nav>
 
       <!-- ======================================================================================== -->
-      <!-- Pfanne vs Wok -->
-      <article class="panVsWok">
-        <div class="container panVsWok">
-          <h2>Pfanne Vs Wok <span>- </span>Was ist besser</h2>
-          <div class="panVsWokContent">
-            <p>
-              Die Pfanne ist ein echter Allrounder in der Küche. Sie eignet sich
-              zum Braten, Schmoren oder für einfache Gerichte wie Spiegeleier
-              und Pfannkuchen. Durch ihre große Bodenfläche wird die Hitze
-              gleichmäßig verteilt. <br /><br />
 
-              Der Wok punktet mit seiner hohen, gewölbten Form. Er ist ideal für
-              asiatische Gerichte, schnelles Anbraten bei starker Hitze und
-              sorgt dafür, dass Gemüse knackig bleibt und wenig Öl benötigt
-              wird.<br /><br />
+      <!-- Navigationsleiste mobil  -->
+      <!-- Burger Menü -->
+      <div class="burger_menu">
+        <button class="burger_menu" onclick="toggleMenu()">
+          <span class="burger_line"></span>
+          <span class="burger_line"></span>
+          <span class="burger_line"></span>
+        </button>
 
-              Fazit: Für den Alltag ist die Pfanne universeller, der Wok
-              hingegen perfekt für schnelle, frische Küche. Am praktischsten ist
-              es, beide zu besitzen.
-            </p>
+        <!-- Navbar -->
+        <nav class="d_none" onclick="toggleMenu()">
+          <ul class="menu">
+            <li><a href="">Start</a></li>
+            <li><a href="">Rezept</a></li>
+            <li><a href="./contact.html">Kontakt</a></li>
+            <li><a href="">Impressum</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-            <img src="src/img/wok.jpg" alt="Bild von einem Wok" />
-          </div>
+    <!-- ======================================================================================== -->
+
+    <!-- Headerline -->
+
+    <div class="header_line"></div>
+
+    <!-- ======================================================================================== -->
+
+    <!-- Rezept des Tages -->
+
+    <section class="container rezept_des_tages">
+      <img
+        class="hero_img"
+        src="./src/img/croissant.jpg"
+        alt="Französische Croissants"
+      />
+      <div class="hero_info">
+        <h2>Französische Croissants</h2>
+        <p>
+          Schamckhafte Croissants können auch zu Hause sehr einfach gebacken
+          werden. Mit ca. 30 Minuten Aufwand kannst du ein wundervolles
+          Frühstück zaubern.
+        </p>
+        <a class="button" href="#">Rezept öfnnen</a>
+      </div>
+    </section>
+
+    <!-- ======================================================================================== -->
+    <!-- Section "Lust auf mehr PB" -->
+    <section class="more">
+      <div class="container more">
+        <h2>Lust auf was Neues?</h2>
+        <!-- Rezepte -->
+        <!-- #1 -->
+        <div class="recipeRow">
+          <figure class="recipe">
+            <a href="#">
+              <div class="imgContainer">
+                <img src="src/img/croissant.jpg" alt="" />
+              </div>
+            </a>
+            <figcaption>Rezept Altin</figcaption>
+          </figure>
+
+          <!-- #2 -->
+          <figure class="recipe">
+            <a href="#">
+              <div class="imgContainer">
+                <img src="src/img/croissant.jpg" alt="" />
+              </div>
+            </a>
+            <figcaption>Rezept Refiye</figcaption>
+          </figure>
+
+          <!-- #3 -->
+          <figure class="recipe">
+            <a href="#">
+              <div class="imgContainer">
+                <img src="src/img/croissant.jpg" alt="" />
+              </div>
+            </a>
+            <figcaption>Rezept Philipp</figcaption>
+          </figure>
         </div>
-      </article>
-    </main>
+      </div>
+    </section>
+
+    <!-- ======================================================================================== -->
+    <!-- Pfanne vs Wok -->
+    <article class="panVsWok">
+      <div class="container panVsWok">
+        <h2>Pfanne Vs Wok <span>- </span>Was ist besser</h2>
+        <div class="panVsWokContent">
+          <p>
+            Die Pfanne ist ein echter Allrounder in der Küche. Sie eignet sich
+            zum Braten, Schmoren oder für einfache Gerichte wie Spiegeleier und
+            Pfannkuchen. Durch ihre große Bodenfläche wird die Hitze gleichmäßig
+            verteilt. <br /><br />
+
+            Der Wok punktet mit seiner hohen, gewölbten Form. Er ist ideal für
+            asiatische Gerichte, schnelles Anbraten bei starker Hitze und sorgt
+            dafür, dass Gemüse knackig bleibt und wenig Öl benötigt wird.<br /><br />
+
+            Fazit: Für den Alltag ist die Pfanne universeller, der Wok hingegen
+            perfekt für schnelle, frische Küche. Am praktischsten ist es, beide
+            zu besitzen.
+          </p>
+
+          <img src="src/img/wok.jpg" alt="Bild von einem Wok" />
+        </div>
+      </div>
+    </article>
+
+    <footer>
+      <div>
+        <img
+          class="footer_logo"
+          src="./src/img/logo_footer_white.png"
+          alt="footer_logo"
+        />
+      </div>
+      <div class="social_media_group">
+        <a href="https://facebook.com"
+          ><img
+            class="social_media"
+            src="./src/img/facebook_white.png"
+            alt="Facebook Logo"
+        /></a>
+        <a href="https://instagram.com"
+          ><img
+            class="social_media"
+            src="./src/img/instagram_white.png"
+            alt="Instagram Logo"
+        /></a>
+        <a href="https://x.com"
+          ><img
+            class="social_media"
+            src="./src/img/x-logo-white.png"
+            alt="X Logo"
+        /></a>
+      </div>
+    </footer>
   </body>
 </html>
