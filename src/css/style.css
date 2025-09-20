@@ -72,25 +72,20 @@ figcaption {
 }
 
 @media (max-width: 1150px) {
-  /* "Lust auf mehr" PB*/
   .container {
     padding: 0 75px;
   }
 }
 
 @media (max-width: 550px) {
-  /* "Lust auf mehr" PB*/
   .container {
     padding: 0 16px;
   }
 }
 
-/* #endregion*/
+/* ================================================================================================ */
 
-/*#region Section "Lust auf mehr" PB */
-.more {
-  background-color: var(--grey);
-}
+/* Navigationsleiste - Refiye*/
 header {
   display: flex;
   justify-content: space-between;
@@ -101,10 +96,6 @@ header {
   height: 144px;
 }
 
-.burger_menu {
-  display: none;
-}
-
 .link {
   font-family: var(--primaryFont);
   font-weight: 700;
@@ -113,7 +104,6 @@ header {
   display: flex;
   align-items: flex-end;
 }
-
 
 .links_menu {
   text-decoration: none;
@@ -126,62 +116,24 @@ header {
   color: #008000;
 }
 
+/* Burgermenü */
+.burger_menu {
+  display: none;
+}
+
+/* Headline */
+
 .header_line {
   border: 1px solid;
-  padding: 0;  
+  padding: 0;
   box-shadow: 4px 4px 5px #888888;
   color: #fff;
   width: 100%;
 }
 
-footer {
-  background-color: var(--footerColor);
-  height: 244px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  padding-left: 50px;
-  padding-right: 50px;
-}
+/* ================================================================================================ */
 
-.footer_logo {
-  height: 90px;
-  object-fit: contain;
-}
-
-.social_media {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
-}
-
-.social_media_group {
-display: flex;
-gap: 25px;
-}
-
-
-.footer_logo {
-  height: 90px;
-  object-fit: contain;
-}
-
-.social_media {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
-}
-
-.social_media_group {
-display: flex;
-gap: 25px;
-}
-
-
-
-/* Anfang der Section Rezept des Tages */
+/* Rezept des Tages - Altin*/
 .rezept_des_tages {
   background-color: white;
   background-position: center;
@@ -190,8 +142,8 @@ gap: 25px;
   /* position: absolute; */
   display: flex;
   flex-direction: row;
-  align-items:flex-start;
-  justify-content:flex-start;
+  align-items: flex-start;
+  justify-content: flex-start;
   padding: 100px 250px 100px 250px;
   /* top: 0;
   right: 0;
@@ -199,9 +151,9 @@ gap: 25px;
   /* justify-content: space-between; */
   /* align-items: flex-end; */
 }
-.more h2 {
-  padding-top: 4.5rem; }
- .hero_img {
+
+/* Bild Rezept des Tages */
+.hero_img {
   height: 300px;
   width: 450px;
   padding-right: 32px;
@@ -209,7 +161,18 @@ gap: 25px;
   object-fit: cover;
   border-radius: 8px;
   margin: 10px 0;
-  
+}
+
+/* ================================================================================================ */
+
+/* Lust auf was Neues - Philipp*/
+
+.more {
+  background-color: var(--grey);
+}
+
+.more h2 {
+  padding-top: 4.5rem;
 }
 
 .recipeRow {
@@ -240,9 +203,10 @@ figure {
 .recipe img:hover {
   transform: scale(1.2);
 }
-/* #endregion */
 
-/* #region Pafanne vs wok */
+/* ================================================================================================ */
+
+/* Pfanne Vs Wok - Philipp */
 .panVsWok h2 {
   margin-top: 4.5rem;
 }
@@ -264,9 +228,9 @@ figure {
   font-size: 1.5rem;
 }
 
-/*#endregion */
+/* ================================================================================================ */
 
-/* #region @media*/
+/* #region @media PB*/
 @media (max-width: 1300px) {
   /* "Lust auf mehr" PB*/
   .imgContainer {
@@ -401,55 +365,93 @@ figure {
   }
 }
 
-/* #endregion @media*/
+/* ================================================================================================ */
+/* Footer - Refiye*/
+footer {
+  background-color: var(--footerColor);
+  height: 244px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
+}
 
+.footer_logo {
+  height: 90px;
+  object-fit: contain;
+}
 
+.social_media {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
 
+.social_media_group {
+  display: flex;
+  gap: 25px;
+}
 
-@media(max-width:1250px){
- 
+.footer_logo {
+  height: 90px;
+  object-fit: contain;
+}
+
+.social_media {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.social_media_group {
+  display: flex;
+  gap: 25px;
+}
+
+/* ================================================================================================ */
+
+/* Mediaquerries aus Nav - Refiye*/
+
+@media (max-width: 1250px) {
   .nav_link {
     display: none;
-  } 
+  }
   .burger_menu {
     cursor: pointer;
-    display: flex; 
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 4px;
     background-color: transparent;
     border: none;
   }
-  
-  .burger_line{
+
+  .burger_line {
     height: 5px;
     width: 34px;
     background-color: black;
   }
-   
-  nav{
+
+  nav {
     display: flex;
     justify-content: center;
     background-color: rgb(209, 207, 204);
     padding: 12px;
     margin-top: 8px;
     width: 150px;
-}
+  }
 
-ul {
+  ul {
     list-style-type: none;
+  }
 }
 
-}
-
-
-
-
-
-@media(max-width:752px){
-    
+@media (max-width: 752px) {
   .logo {
-       height: 95px; 
+    height: 95px;
   }
 
   .footer_logo {
@@ -459,40 +461,37 @@ ul {
     gap: 5px;
   }
   .social_media {
-   width: 20px;
+    width: 20px;
     height: 20px;
-  } 
+  }
 }
 
-  @media(max-width:553px){
-
+@media (max-width: 553px) {
   .logo {
-       height: 75px; 
+    height: 75px;
   }
   .footer_logo {
     height: 40px;
   }
 }
 
-@media(max-width:535px){
-
+@media (max-width: 535px) {
   logo {
-       height: 65px; 
+    height: 65px;
   }
 
   .social_media_group {
     gap: 3px;
   }
   .social_media {
-   width: 15px;
+    width: 15px;
     height: 15px;
-  } 
+  }
 }
 
-@media(max-width:466px){
-
+@media (max-width: 466px) {
   .logo {
-       height: 40px; 
+    height: 40px;
   }
   .footer_logo {
     height: 30px;
@@ -503,9 +502,5 @@ ul {
   .social_media {
    width: 15px;
     height: 15px;
-  } 
+  }
 }
-
-
-/* Ende der Section Rezept des Tages */
-
