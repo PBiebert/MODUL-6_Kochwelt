@@ -84,7 +84,7 @@ figcaption {
   }
 }
 
-/* #endregion*/
+/* ================================================================================================ */
 
 /*#region Section "Lust auf mehr" PB */
 .more {
@@ -125,7 +125,9 @@ figure {
 }
 /* #endregion */
 
-/* #region Pafanne vs wok */
+/* ================================================================================================ */
+
+/* #region Pafanne vs wok  PB */
 .panVsWok h2 {
   margin-top: 4.5rem;
 }
@@ -149,7 +151,7 @@ figure {
 
 /*#endregion */
 
-/* #region @media*/
+/* #region @media PB*/
 @media (max-width: 1300px) {
   /* "Lust auf mehr" PB*/
   .imgContainer {
@@ -285,3 +287,5 @@ figure {
 }
 
 /* #endregion @media*/
+
+/* ================================================================================================ */
