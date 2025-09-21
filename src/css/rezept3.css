@@ -1,0 +1,219 @@
+:root {
+  /* Farbe */
+  --grey: #dbdbdb;
+  --footerColor: #242424;
+  --buttonColor: #008000;
+  --buttonColor: #008000;
+
+  /* Schriftarten */
+  --primaryFont: "Raleway", sans-serif;
+}
+
+/* Überschrift */
+.recipeContainer > h1 {
+  margin-top: 4.5rem;
+  align-self: flex-start;
+}
+
+/* Image */
+.recipeContainer > img {
+  width: 100%;
+  height: 21rem;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 1rem;
+  margin: 3.75rem 0;
+}
+
+/*  Zutaten für Bereich*/
+.preparationData {
+  display: flex;
+  align-self: flex-start;
+  gap: 2rem;
+}
+
+.preparation {
+  display: flex;
+  background-color: var(--grey);
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2.25rem;
+}
+
+.preparation img {
+  width: 1rem;
+  margin-right: 0.5rem;
+}
+
+.line {
+  height: 1px;
+  width: 100%;
+  margin: 1.25rem 0;
+  background-color: var(--grey);
+}
+
+/* MengenRechner */
+.quantities {
+  align-self: flex-start;
+  display: flex;
+  margin-bottom: 1.25rem;
+}
+
+.quantities > p {
+  margin-right: 1rem;
+  line-height: 3rem;
+}
+
+.quantities > input {
+  height: 3rem;
+  padding: 1rem;
+  border: 1px solid var(--grey);
+  border-radius: 0.5rem 0 0 0.5rem;
+  font-weight: bold;
+}
+
+.quantities > button {
+  height: 3rem;
+  width: 8.5rem;
+  background-color: var(--buttonColor);
+  border: none;
+  border-radius: 0 0.5rem 0.5rem 0;
+  color: white;
+}
+
+/* Tabelle */
+
+.table {
+  width: 100%;
+  margin-bottom: 3.25rem;
+}
+
+.tableRow {
+  width: 100%;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+}
+
+.tableRow:nth-child(odd) {
+  background-color: var(--grey);
+}
+
+.crowd {
+  margin-left: 1rem;
+}
+
+/* Zubereitung */
+.recipeContainer > h2 {
+  align-self: flex-start;
+  margin-bottom: 2rem;
+}
+
+/* Zubereitungsschritte */
+.step {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.stepNumber {
+  padding-right: 1rem;
+  font-weight: bold;
+}
+
+.editorSection {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+
+.editor {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 6rem;
+}
+
+.editor > img {
+  height: 6rem;
+  border-radius: 50%;
+  padding-right: 1rem;
+}
+
+/* Mediaquerries */
+
+@media (max-width: 610px) {
+  /* Header */
+  .recipeContainer > h1 {
+    margin-top: 2.5rem;
+    text-wrap: nowrap;
+  }
+
+  .recipeContainer > img {
+    margin: 2rem 0;
+  }
+
+  /* Mengen Rechner */
+  .quantities {
+    width: 100%;
+  }
+  .quantities > p {
+    min-width: 84px;
+  }
+  .quantities > input {
+    width: 50%;
+  }
+  .quantities > button {
+    width: 50%;
+  }
+
+  /* Table */
+  .table {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  /* Editor */
+  .editor {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  /* Mengen Rechner */
+  .quantities > input {
+    width: 50%;
+  }
+  .quantities > button {
+    width: 50%;
+  }
+}
+
+@media (max-width: 455px) {
+  /* Header */
+  .recipeContainer > h1 {
+    text-wrap: wrap;
+  }
+}
+
+@media (max-width: 420px) {
+  /* Zubereitungs Daten */
+  .preparationData {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .preparation {
+    margin-bottom: 1rem;
+  }
+
+  .recipeContainer > img {
+    height: auto;
+  }
+}
+
+@media (max-width: 383px) {
+  /* Header */
+  .recipeContainer > img {
+    height: auto;
+  }
+}
