@@ -1,0 +1,52 @@
+.containerDatenschutz {
+  padding: 0 75px;
+}
+
+.datenschutz {
+  margin-bottom: 2rem;
+  overflow-wrap: break-word;
+}
+
+h1 {
+  margin-top: 2rem;
+}
+
+h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 0.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+.dNone {
+  display: none;
+}
+
+@media (max-width: 650px) {
+  .containerDatenschutz {
+    padding: 0 2.5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .containerDatenschutz {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .dNone {
+    display: initial;
+  }
+}
