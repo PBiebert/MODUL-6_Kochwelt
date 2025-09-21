@@ -19,7 +19,7 @@ body {
     align-items: flex-end;  
     padding-bottom: 8px;
     height: 144px; 
-    max-width: 1920px;
+    max-width: 1440px;
     width: 100%;
   }
 
@@ -64,7 +64,7 @@ p {
   font-size: 56px;
 }
 .contact {
-  padding: 50ox 0;
+  padding: 50px 0;
   gap: 20px;
   display: flex;
   justify-content: center;
@@ -83,7 +83,6 @@ padding: 100px 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: auto;
   height: 100%;
 }
 
