@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Kochwelt</title>
+
+    <!-- Fonts extern einbinden -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <!-- CSS einbinden -->
+    <link rel="stylesheet" href="feigensalat.css"/>
+    <script src="burger_menu.js"></script>
+    <title>Kochwelt</title>
+    <link rel="icon" type="image/small_png" href="./src/img/logo_small.png">
+  </head>
+
+
+  <body>
+    <div>  
+        <header>
+            <img class="logo" src="./src/img/logo.png" alt="Kochwelt Logo">
+            <nav class="nav_link">
+                <div class="link">
+                  <a class="links_menu" href="index.html">Start</a>
+                  <a class="links_menu" href="">Rezept der Tages</a>
+                  <a class="links_menu" href="contact.html">Kontakt</a>
+                  <a class="links_menu" href="">Impressum</a>
+                </div>
+            </nav>
+
+    <div class="burger_menu">      
+        <button class="burger_menu" onclick="toggleMenu()">
+            <span class="burger_line"></span>
+            <span class="burger_line"></span>
+            <span class="burger_line"></span>
+        </button>
+        <nav class="d_none" onclick="toggleMenu()">
+          <ul class="menu">
+            <li><a href="index.html">Start</a></li>
+            <li><a href="">Rezept</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+            <li><a href="">Impressum</a></li>
+          </ul>
+        </nav>
+    </div>
+  </header>
+
+      <div class="header_line"></div>        
+        <div>
+          <h1>Herbstlicher Feigensalat mit Ziegenkäse</h1>
+            <img class="salad_img responsive_img" src="./salad-1672505_1280.jpg" alt="Salat">
+        </div>
+
+        <div class="property">
+              <div class="info_items">            
+                <img class="icons" src="./src/img/clock-regular.svg" alt="clock">
+                  <p class="box_content" >20 Min.</p>
+              </div>
+              <div class="info_items">            
+                <img class="icons" src="./src/img/brain-solid.svg" alt="clock">
+                  <p class="box_content">Simpel</p>
+              </div>
+
+              <div class="info_items">            
+                <img class="icons" src="./src/img/calendar-alt-regular.svg" alt="clock">
+                 <p class="box_content">21.09.2025</p>
+              </div>
+        </div>
+
+        <div class="line"></div>
+
+
+
+
+        <div class="serving_size">
+          <label class="box_content" for="amount">Zutaten für</label>
+            <input class="box_content" id="amount" type="number" min="1" max="100">
+              <form>
+                <button class="box_content" type="submit">Portionen</button>
+            </form>
+          </div>  
+      
+
+          <p class="head_ingredients" >Für den Salat</p>
+        <ul class="ingredients" >
+            <li>100 g gemischter Blattsalat (z.B. Rucola, Feldsalat, Kopfsalat)</li>
+            <li>1 Frische Feige</li>
+            <li data-original-amount="50">50 g Ziegenkäse</li>
+            <li>Ein paar Wallnüsse</li>
+            <li data-original-amount="4">4 Kirschtomaten</li>
+            <li>Paar Gurkenscheiben</li>
+            <li >Paar Karottenscheiben</li>
+        </ul>
+
+        <p class="head_ingredients">Für das Dressing</p>
+        <ul class="ingredients" >
+          <li>3 EL Balsamico-Essig</li>
+          <li>4 EL Olivenöl</li>
+          <li>1 TL Honig oder Ahornsirup</li>
+          <li>Salz und Pfeffer nach Geschmack</li>
+        </ul>
+
+        <p class="head_ingredients" >Zubereitung</p>
+        <div class="property">
+              <div class="info_items">            
+                <img class="icons" src="./src/img/clock-regular.svg" alt="clock">
+                  <p class="box_content">ca 20 Min.</p>
+              </div>
+              <div class="info_items">            
+                <img class="icons" src="./src/img/clock-regular.svg" alt="clock">
+                  <p class="box_content">Gesamtzeit ca 15 Minuten</p>
+              </div>
+        </div>
+
+        <div>
+        <p class="text_spacing"><strong>Vorbereitung:</strong> Waschen Sie den Blattsalat. Vierteln Sie die Pfeige. 
+          Rösten Sie die Walnüsse kurz in einer trockenen Pfanne, bis die duften.
+          Schneiden Sie die restliche zutaten mundgerecht.
+        </p>
+        <p class="text_spacing"><strong>Dressing anrühren:</strong>Geben Sie Balsamico-Essig, Olivenöl, Honig, Salz 
+        und Pfeffer in eine kleine Schüssel. Verrühren Sie alles kräftig mit einem Schneebesen, 
+        bis eine cremige Emulsion entsteht.</p>
+        <p class="text_spacing"><strong>Anrichten:</strong>Verteilen Sie den Salat auf zwei Teller. Legen Sie die Feigenspalten 
+          und die Ziegenkäse-Stücke darauf. Streuen Sie die gerösteten Nüsse darüber.</p>
+        <p class="text_spacing"><strong>Servieren:</strong>Beträufeln Sie den Salat kurz vor dem Servieren großzügig mit dem Dressing.</p>
+        <p>Dieses Rezept ist schnell zubereitet und perfekt für ein leichtes, aber geschmackvolles Essen.Guten Appetit!</p>
+        </div>
+
+
+          <div class="creator">
+            <h3>Rezept erstellt von</h3>
+            <div class="creator_name">
+                <img class="creator_img" src="refiye.png" alt="Bild von der Erstellerin">
+                  <p>Refiye</p>          
+                </div>
+            </div>
+
+        <footer>
+             <div>
+               <img class="footer_logo" src="./src/img/logo_footer_white.png" alt="footer_logo">
+             </div>
+              <div class="social_media_group">
+                 <a href="https://facebook.com"> <img class="social_media" src="./src/img/facebook_white.png" alt="Facebook Logo"></a>
+                 <a href="https://instagram.com"> <img class="social_media" src="./src/img/instagram_white.png" alt="Instagram Logo"></a>
+                  <a href="https://x.com"> <img class="social_media" src="./src/img/x-logo-white.png" alt="X Logo"></a>
+              </div>
+        </footer>
+  </body>
+</html>
