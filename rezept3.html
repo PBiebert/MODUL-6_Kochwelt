@@ -87,74 +87,80 @@
         <!-- Mengen Rechner -->
         <div class="quantities">
           <p>Zutaten für</p>
-          <input type="number" name="Number" id="quantitiesNumber" value="2" />
-          <button type="button">Portionen</button>
+          <input
+            type="number"
+            name="Number"
+            id="quantitiesNumber"
+            min="1"
+            value="2"
+          />
+          <button type="button" id="button">Portionen</button>
         </div>
 
         <!-- Zutaten Tabelle -->
         <div class="table">
           <div class="tableRow">
-            <span class="crowd">280</span>
+            <span class="crowd" data-crowd="140">280</span>
             <span>g</span>
-            <span>Veganes Steak</span>
+            <span>Steak</span>
           </div>
           <div class="tableRow">
-            <span class="crowd">600</span>
+            <span class="crowd" data-crowd="300">600</span>
             <span>g</span>
             <span>mehligk. Kartoffeln</span>
           </div>
           <div class="tableRow">
-            <span class="crowd">150</span>
+            <span class="crowd" data-crowd="75">150</span>
             <span>g</span>
             <span>Buschbohnen</span>
           </div>
           <div class="tableRow">
-            <span class="crowd">1</span>
+            <span class="crowd" data-crowd="0.5">1</span>
             <span>Stk</span>
             <span>Schalotte</span>
           </div>
           <div class="tableRow">
-            <span class="crowd">1</span>
+            <span class="crowd" data-crowd="0.5">1</span>
             <span>Stk</span>
             <span>Knoblauchzehe</span>
           </div>
           <div class="tableRow">
-            <span class="crowd">12</span>
+            <span class="crowd" data-crowd="6">12</span>
             <span>g</span>
             <span>Balsamico Creme</span>
           </div>
           <div class="tableRow">
-            <span class="crowd">40</span>
+            <span class="crowd" data-crowd="20">40</span>
             <span>g</span>
             <span>Pflaumenkonfitüre</span>
           </div>
           <div class="tableRow">
-            <span class="crowd">25</span>
+            <span class="crowd" data-crowd="12.5">25</span>
             <span>g</span>
             <span>Semmelbrösel</span>
           </div>
           <div class="tableRow">
-            <span class="crowd">100</span>
+            <span class="crowd" data-crowd="50">100</span>
             <span>ml</span>
             <span>Wasser</span>
           </div>
           <div class="tableRow">
-            <span class="crowd">4</span>
+            <span class="crowd" data-crowd="2">4</span>
             <span>El</span>
             <span>Butter</span>
           </div>
           <div class="tableRow">
-            <span class="crowd">50</span>
+            <span class="crowd" data-crowd="25">50</span>
             <span>ml</span>
             <span>Milch</span>
           </div>
           <div class="tableRow">
-            <span class="crowd"></span>
+            <span class="crowd" data-crowd=""></span>
             <span>nach Geschmack</span>
             <span>Pfeffer</span>
           </div>
           <div class="tableRow">
-            <span class="crowd"></span>
+            <span class="crowd" data-crowd=""></span>
             <span>nach Geschmack</span>
             <span>Salz</span>
           </div>
@@ -165,7 +171,7 @@
         <!-- Zeitangaben -->
         <div class="preparationData">
           <div class="preparation">
-            <img src="src/img/clock-regular.svg" />30 min
+            <img src="src/img/clock-regular.svg" />30 min Arbeitszeit
           </div>
           <div class="preparation">
             <img src="src/img/clock-regular.svg" />35 min Gesamtzeit
@@ -218,8 +224,8 @@
           <div class="step">
             <p class="stepNumber">5.</p>
             <p>
-              In einer großen Pfanne 1 EL Öl erhitzen. Vegane Steaks darin 3 – 4
-              Min. pro Seite goldbraun anbraten. Beim Wenden 1 EL Butter und
+              In einer großen Pfanne 1 EL Öl erhitzen. Steaks darin 3 – 4 Min.
+              pro Seite goldbraun anbraten. Beim Wenden 1 EL Butter und
               Schalotte dazugeben. Steaks nach der Garzeit herausnehmen und
               ggfs. warmhalten. Pfanneninhalt mit vorbereiteter Soße ablöschen
               und 2 – 3 Min. köcheln lassen, bis die Soße dickflüssig ist. Mit
@@ -229,10 +235,10 @@
           <div class="step">
             <p class="stepNumber">6.</p>
             <p>
-              Vegane Steaks in feine Scheiben schneiden und auf einer Seite
-              eines Tellers anrichten. Kartoffelpüree daneben geben und mithilfe
-              eines Kochlöffels ausstreichen. Knoblauch-Bohnen darauf geben und
-              mit gerösteten Semmelbröseln garnieren. Nach Belieben mit Soße
+              Steaks in feine Scheiben schneiden und auf einer Seite eines
+              Tellers anrichten. Kartoffelpüree daneben geben und mithilfe eines
+              Kochlöffels ausstreichen. Knoblauch-Bohnen darauf geben und mit
+              gerösteten Semmelbröseln garnieren. Nach Belieben mit Soße
               begießen. Guten Appetit!
             </p>
           </div>
@@ -283,5 +289,6 @@
     </footer>
     <!-- JS einbinden -->
     <script src="src/js/burger_menu.js"></script>
+    <script src="src/js/IngredientsCalculator.js"></script>
   </body>
 </html>
