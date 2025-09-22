@@ -385,14 +385,6 @@ figcaption {
 }
 /* ================================================================================================ */
 
-@media (max-width: 1398px) {
-  .link {
-    font-size: 20px;
-    gap: 25px;
-  }
-}
-
-/* #region @media PB*/
 @media (max-width: 1300px) {
   /* "Lust auf mehr" PB*/
   .imgContainer {
@@ -402,13 +394,6 @@ figcaption {
 
   figcaption {
     width: 15rem;
-  }
-}
-
-@media (max-width: 1286px) {
-  .link {
-    font-size: 18px;
-    gap: 25px;
   }
 }
 
@@ -614,21 +599,43 @@ footer {
     background-color: black;
   } */
 
+@media (max-width: 1325px) {
+  /* Navbar */
+  .link {
+    font-size: 20px;
+    gap: 25px;
+  }
+}
+
+/* Wird nicht benötigt */
+/* @media (max-width: 1286px) {
+  .link {
+    font-size: 18px;
+    gap: 25px;
+  }
+} */
+
 @media (max-width: 1200px) {
   .logo {
     width: 300px;
   }
 }
-@media (max-width: 1032px) {
+
+/* Wird nicht benötigt */
+/* @media (max-width: 1032px) {
   .link {
     gap: 20px;
   }
   .logo {
     width: 300px;
   }
-}
+} */
 
-@media (max-width: 920px) {
+@media (max-width: 960px) {
+  .navbar {
+    height: 110px;
+  }
+
   .logo {
     width: 250px;
   }
@@ -647,6 +654,13 @@ footer {
     gap: 10px;
     display: flex;
   }
+
+  .nav_link {
+    display: none;
+  }
+  .burger_menu {
+    display: flex;
+  }
 }
 
 @media (max-width: 850px) {
@@ -655,7 +669,7 @@ footer {
   }
   .small_logo {
     display: flex;
-    width: 100px;
+    width: 250px;
   }
 }
 
@@ -673,12 +687,6 @@ footer {
 }
 
 @media (max-width: 752px) {
-  .nav_link {
-    display: none;
-  }
-  .burger_menu {
-    display: flex;
-  }
   .footer_logo {
     display: none;
   }
@@ -717,6 +725,10 @@ footer {
 }
 
 @media (max-width: 400px) {
+  .small_logo {
+    width: 200px;
+  }
+
   .footer_logo_white {
     width: 50px;
   }
