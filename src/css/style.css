@@ -78,15 +78,6 @@ a {
   align-items: center;
 }
 
-.container_header_footer {
-  width: 100%;
-  max-width: 1920px;
-  padding: 0 150px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-
 @media (max-width: 1150px) {
   .container {
     padding: 0 75px;
@@ -107,8 +98,6 @@ a {
   width: 100%;
   justify-content: space-between;
   align-items: flex-end;
-  padding-left: 50px;
-  padding-right: 50px;
   padding-bottom: 8px;
   height: 144px;
 }
