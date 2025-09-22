@@ -107,6 +107,7 @@ header {
 
 .links_menu {
   text-decoration: none;
+    color: #000000;
 }
 
 .links_menu:hover {
