@@ -318,6 +318,14 @@ figcaption {
 
 /* ================================================================================================ */
 
+@media(max-width: 1398px){
+  .link {
+    font-size: 20px;
+    gap: 25px;
+  }
+}
+
+
 /* #region @media PB*/
 @media (max-width: 1300px) {
   /* "Lust auf mehr" PB*/
@@ -328,6 +336,13 @@ figcaption {
 
   figcaption {
     width: 15rem;
+  }
+}
+
+@media(max-width: 1286px){
+  .link {
+    font-size: 18px;
+    gap: 25px;
   }
 }
 
