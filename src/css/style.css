@@ -77,7 +77,7 @@ figcaption {
   padding: 0 150px;
   display: flex;
  justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
 }
 
 @media (max-width: 1150px) {
@@ -316,6 +316,32 @@ figcaption {
   font-size: 1.5rem;
 }
 
+
+
+
+
+.links_footer {
+  font-family: var(--primaryFont);
+  font-weight: normal;
+  font-size: 16px;
+  gap: 30px;
+  display: flex;
+  align-items: flex-end;
+  list-style: none;
+}
+
+
+.links_menu_footer {
+  text-decoration: none;
+    color: #ffffff;
+}
+
+.links_menu_footer:hover {
+  text-decoration: underline 5px solid;
+  text-underline-offset: 12px;
+  text-decoration-thickness: 6px;
+  color: #008000;
+}
 /* ================================================================================================ */
 
 @media(max-width: 1398px){
