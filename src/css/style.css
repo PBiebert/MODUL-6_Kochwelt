@@ -1,3 +1,45 @@
+/* 
+  Einbindung der Schriftart "Raleway" über @font-face:
+
+  1. font-family: "Raleway";
+     - Definiert den Namen der Schriftart, wie sie im CSS später verwendet wird.
+     - Beispiel: font-family: "Raleway", sans-serif;
+
+  2. src: url(../fonts/Raleway-VariableFont_wght.ttf) format("truetype");
+     - Legt den Pfad zur Schriftdatei fest (relativ zum CSS-File).
+     - format("truetype") gibt den Dateityp an, hier eine TrueType-Schrift.
+
+  3. font-weight: 100 900;
+     - Definiert den Gewichtsbereich der Schrift (Variable Font von dünn bis fett).
+     - Bei normaler Schrift kann man hier z.B. nur 400 setzen.
+
+  4. font-style: normal / italic;
+     - Gibt an, ob die Schrift normal oder kursiv dargestellt wird.
+     - Hier wird jeweils eine Variante für normal und kursiv definiert.
+
+  Nutzung im CSS:
+  ---------------------------------
+  body {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;  // beliebiges Gewicht zwischen 100 und 900
+    font-style: normal; // oder italic
+  }
+*/
+
+@font-face {
+  font-family: "Raleway";
+  src: url(../fonts/Raleway-VariableFont_wght.ttf) format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url(../fonts/Raleway-VariableFont_wght.ttf) format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+}
+
 :root {
   /* Farbe */
   --grey: #dbdbdb;
@@ -21,14 +63,12 @@ html {
   scroll-behavior: smooth;
 }
 
-
-
- .logo{
+.logo {
   width: 400px;
- } 
- .small_logo {
+}
+.small_logo {
   display: none;
- }
+}
 
 .footer_logo_white {
   display: none;
@@ -175,11 +215,10 @@ a {
   right: 0px;
   top: 9rem;
   height: auto;
- /* display: flex;
   align-items: center;
   justify-content: center;
   text-align: right;
-  display: none;*/
+  display: none;
   padding: 1rem 50px;
   border-radius: 0 0 2rem 2rem;
   background-color: var(--grey);
@@ -569,33 +608,27 @@ footer {
 
 /* Mediaquerries aus Nav - Refiye*/
 
-
-
-  /* .burger_line {
+/* .burger_line {
     /* height: 5px;
     width: 34px;
     background-color: black;
   } */
 
-
-  @media(max-width:1200px){
-    .logo {
-      width: 300px;
-    }
-
+@media (max-width: 1200px) {
+  .logo {
+    width: 300px;
   }
- @media(max-width:1032px){
-
+}
+@media (max-width: 1032px) {
   .link {
     gap: 20px;
   }
   .logo {
     width: 300px;
   }
- }
+}
 
-
- @media(max-width:920px){
+@media (max-width: 920px) {
   .logo {
     width: 250px;
   }
@@ -614,11 +647,9 @@ footer {
     gap: 10px;
     display: flex;
   }
- }
+}
 
-
- @media(max-width:850px){
-  
+@media (max-width: 850px) {
   .logo {
     display: none;
   }
@@ -626,10 +657,9 @@ footer {
     display: flex;
     width: 100px;
   }
- }
+}
 
-
- @media(max-width:780px){
+@media (max-width: 780px) {
   .footer_logo {
     height: 40px;
   }
@@ -640,17 +670,17 @@ footer {
     width: 20px;
     height: 20px;
   }
- }
+}
 
-@media (max-width: 752px) { 
- .nav_link {
+@media (max-width: 752px) {
+  .nav_link {
     display: none;
   }
   .burger_menu {
     display: flex;
   }
   .footer_logo {
-  display: none;
+    display: none;
   }
   .footer_logo_white {
     display: block;
@@ -666,33 +696,27 @@ footer {
 }
 
 @media (max-width: 553px) {
-  
-  
   .footer_logo {
     height: 40px;
   }
 }
 
 @media (max-width: 535px) {
- 
   .social_media_group {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-     gap: 4px;
-     padding-right: 16px; 
+    gap: 4px;
+    padding-right: 16px;
   }
 
   .social_media {
     width: 22px;
-    height: 22px; 
+    height: 22px;
   }
-
 }
 
-
 @media (max-width: 400px) {
-
   .footer_logo_white {
     width: 50px;
   }
@@ -701,8 +725,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; 
+    flex-direction: column;
     gap: 8px;
   }
 }
- 

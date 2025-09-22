@@ -3,32 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <title>Kochwelt</title>
-   
+
     <link rel="shortcut icon" href="./src/img/logo.png" type="image/x-icon" />
 
-    <!-- Fonts extern einbinden -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
     <!-- CSS einbinden -->
     <link rel="stylesheet" href="./src/css/style.css" />
 
     <!-- Favicon -->
-    <link class="favicon" rel="icon" type="image/logo_png" href="./src/img/logo_small.png"/>
+    <link
+      rel="icon"
+      type="image/png"
+      href="/src/fav/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="/src/fav/favicon.svg" />
+    <link rel="shortcut icon" href="/src/fav/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/src/fav/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="Kochwelt" />
+    <link rel="manifest" href="/src/fav/site.webmanifest" />
   </head>
 
   <body>
     <!-- Navigationsleiste Web -->
     <header class="container">
       <div class="navbar">
-        <img class="logo" src="./src/img/logo.png" alt="Kochwelt Logo"/>
-        <img class="small_logo" src="./src/img/logo_small.png" alt="Kochwelt Small Logo">
-        
+        <a href="index.html">
+          <img class="logo" src="./src/img/logo.png" alt="Kochwelt Logo" />
+          <img
+            class="small_logo"
+            src="./src/img/logo.png"
+            alt="Kochwelt Small Logo"
+        /></a>
+
         <nav class="nav_link">
           <ul class="link">
             <li><a class="links_menu" href="">Start</a></li>
@@ -164,17 +176,25 @@
     <footer>
       <div class="footerContainer container">
         <!-- Logo -->
-        <img
-          class="footer_logo"          
-          src="./src/img/logo_footer_white.png"
-          alt="Footer Logo"
-        />
-        <img class="footer_logo_white" src="./src/img/logo_small_white.png" alt="Footer Logo Small">
+        <a href="index.html">
+          <img
+            class="footer_logo"
+            src="./src/img/logo_footer_white.png"
+            alt="Footer Logo" />
+          <img
+            class="footer_logo_white"
+            src="./src/img/logo_small_white.png"
+            alt="Footer Logo Small"
+        /></a>
         <!-- Links -->
         <nav class="nav_link_footer">
           <ul class="links_footer">
             <li><a class="links_menu_footer" href="">Impressum</a></li>
-            <li><a class="links_menu_footer" href="">Datenschutz</a></li>
+            <li>
+              <a class="links_menu_footer" href="datenschutz.html"
+                >Datenschutz</a
+              >
+            </li>
           </ul>
         </nav>
 
