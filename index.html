@@ -15,37 +15,30 @@
     />
     <!-- CSS einbinden -->
     <link rel="stylesheet" href="./src/css/style.css" />
-
-    <!-- Favicon -->
+    <script src="burger_menu.js"></script>
+    <title>Kochwelt</title>
     <link rel="icon" type="image/small_png" href="./src/img/logo_small.png" />
   </head>
 
   <body>
-    <!-- Navigationsleiste Web -->
     <header>
       <img class="logo" src="./src/img/logo.png" alt="Kochwelt Logo" />
       <nav class="nav_link">
         <div class="link">
           <a class="links_menu" href="">Start</a>
           <a class="links_menu" href="">Rezept der Tages</a>
-          <a class="links_menu" href="contact.html">Kontakt</a>
+          <a class="links_menu" href="">Kontakt</a>
           <a class="links_menu" href="">Impressum</a>
         </div>
       </nav>
 
-      <!-- ======================================================================================== -->
-
-      <!-- Navigationsleiste mobil  -->
-      <!-- Burger Menü -->
       <div class="burger_menu">
-        <button class="burger_menu">
+        <button class="burger_menu" onclick="toggleMenu()">
           <span class="burger_line"></span>
           <span class="burger_line"></span>
           <span class="burger_line"></span>
         </button>
-
-        <!-- Navbar -->
-        <nav class="mobileNav">
+        <nav class="d_none" onclick="toggleMenu()">
           <ul class="menu">
             <li><a href="">Start</a></li>
             <li><a href="">Rezept</a></li>
@@ -55,23 +48,9 @@
         </nav>
       </div>
     </header>
-
-    <!-- ======================================================================================== -->
-
-    <!-- Headerline -->
-
     <div class="header_line"></div>
-
-    <!-- ======================================================================================== -->
-
-    <!-- Rezept des Tages -->
-
     <section class="container rezept_des_tages">
-      <img
-        class="hero_img"
-        src="./src/img/croissant.jpg"
-        alt="Französische Croissants"
-      />
+      <img class="hero_img" src="./src/img/croissant.jpg" alt="Französische Croissants">
       <div class="hero_info">
         <h2>Französische Croissants</h2>
         <p>
@@ -83,7 +62,6 @@
       </div>
     </section>
 
-    <!-- ======================================================================================== -->
     <!-- Section "Lust auf mehr PB" -->
     <section class="more">
       <div class="container more">
@@ -112,21 +90,17 @@
 
           <!-- #3 -->
           <figure class="recipe">
-            <a href="rezept3.html">
+            <a href="#">
               <div class="imgContainer">
-                <img
-                  src="src/img/PctaImg.jpg"
-                  alt="Bild von Steak mit Pflaumensoße"
-                />
+                <img src="src/img/croissant.jpg" alt="" />
               </div>
             </a>
-            <figcaption>Steak mit Pflaumensoße</figcaption>
+            <figcaption>Rezept Philipp</figcaption>
           </figure>
         </div>
       </div>
     </section>
 
-    <!-- ======================================================================================== -->
     <!-- Pfanne vs Wok -->
     <article class="panVsWok">
       <div class="container panVsWok">
@@ -152,9 +126,6 @@
       </div>
     </article>
 
-    <!-- ======================================================================================== -->
-
-    <!-- Footer -->
     <footer>
       <div>
         <img
@@ -184,8 +155,5 @@
         /></a>
       </div>
     </footer>
-
-    <!-- JS einbinden -->
-    <script src="src/js/burger_menu.js"></script>
   </body>
 </html>

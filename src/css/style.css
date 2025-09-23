@@ -207,24 +207,15 @@ header {
 
 /* Rezept des Tages - Altin*/
 .rezept_des_tages {
-  background-color: white;
-  background-position: center;
-  background-size: cover;
-  object-fit: cover;
-  /* position: absolute; */
+  margin: 4.5rem 0 4.5rem 0;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 100px 250px 100px 250px;
-  /* top: 0;
-  right: 0;
-  left: 0; */
-  /* justify-content: space-between; */
-  /* align-items: flex-end; */
 }
 
 /* Bild Rezept des Tages */
+
 .hero_img {
   height: 300px;
   width: 450px;
@@ -232,7 +223,48 @@ header {
   display: block;
   object-fit: cover;
   border-radius: 8px;
-  margin: 10px 0;
+}
+
+.hero_info h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px; /* Abstand */
+  text-align: left; /* Überschrift linksbündig */
+}
+
+.hero_info .button {
+  display: inline-block;
+  margin-top: 20px; /* Abstand nach unten zum Text */
+  background-color: var(--buttonColor);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero_info .button:hover {
+  background-color: #0b6538; /* dunkleres Grün */
+}
+
+
+@media (max-width: 900px) {
+  .rezept_des_tages {
+    flex-direction: column;
+    padding: 50px 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero_img {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 8px; /* wenn mobil, rundherum Radius */
+  }
+
+  .hero_info h2 {
+    text-align: center;
+  }
 }
 
 /* ================================================================================================ */

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Albanischer Salat</title>
+
+  <link rel="shortcut icon" href="./src/img/logo.png" type="image/x-icon" /> <!-- sorgt dafür, dass die Webseite ein Favicon hat -->
+
+  <!-- Fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Linken zu style.css und alb_rezept.css -->
+  <link rel="stylesheet" href="./src/css/style.css">
+  <link rel="stylesheet" href="./src/css/alb_rezept.css">
+</head>
+
+<body>
+  <!-- Wird von Hauptseite genommen-->
+  <!-- Navigationsleiste Web -->
+    <header>
+      <img class="logo" src="./src/img/logo.png" alt="Kochwelt Logo" />
+      <nav class="nav_link">
+        <div class="link">
+          <a class="links_menu" href="">Start</a>
+          <a class="links_menu" href="">Rezept der Tages</a>
+          <a class="links_menu" href="">Kontakt</a>
+          <a class="links_menu" href="">Impressum</a>
+        </div>
+      </nav>
+
+      <!-- ======================================================================================== -->
+
+      <!-- Navigationsleiste mobil  -->
+      <!-- Burger Menü -->
+      <div class="burger_menu">
+        <button class="burger_menu">
+          <span class="burger_line"></span>
+          <span class="burger_line"></span>
+          <span class="burger_line"></span>
+        </button>
+
+        <!-- Navbar -->
+        <nav class="mobileNav">
+          <ul class="menu">
+            <li><a href="">Start</a></li>
+            <li><a href="">Rezept</a></li>
+            <li><a href="./contact.html">Kontakt</a></li>
+            <li><a href="">Impressum</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ======================================================================================== -->
+
+    <!-- Headerline -->
+
+    <div class="header_line"></div>
+
+    <!-- ======================================================================================== -->
+
+    <main>
+      <section class="container alb_salat">
+        <!-- Header -->
+        <h1>Albanischer Salat</h1>
+        <img src="/src/img/salad.jpg" alt="Photo Albanischer Salat">
+
+        <div class="badge_data">
+          <span class="badge"><img src="/src/img/clock-regular.svg" alt="Clock Image" style="margin-right: 5px;">15 Min.</span>
+          <span class="badge"><img src="/src/img/brain-solid.svg" alt="Brain Image" style="margin-right: 5px;"> simple</span>
+          <span class="badge"><img src="/src/img/calendar-alt-regular.svg" alt="Calendar Image" style="margin-right: 5px;"> 20.09.2025</span>
+        </div>
+
+        <div class="line"></div>
+
+
+        <!-- Zutaten + Portionen Rechner-->
+        <div class="ingredients">
+          <p>Zutaten für</p>
+          <input type="number" min="1" value="">
+          <button type="button">Portionen</button>
+        </div>
+
+        <div class="liste meine-liste">
+          <!-- Basis-Anzahl der Portionen -->
+          <ul class="meine-liste">
+            <li class="ingredient">4 Tomaten</li>
+            <li class="ingredient">2 Gurken</li>
+            <li class="ingredient">1 grüne Paprika</li>
+            <li class="ingredient">1 rote Zwiebel</li>
+            <li class="ingredient">100 g Schafskäse (Feta)</li>
+            <li class="ingredient">Salz und Pfeffer</li>
+            <li class="ingredient">4 EL Olivenöl</li>
+            <li class="ingredient">1–2 EL Weißweinessig oder Zitronensaft</li>
+            <li class="ingredient">Salz und Pfeffer</li>
+            <li class="ingredient">etwas frische Petersilie</li>
+          </ul>
+        </div>
+        <!-- Zubereitung -->
+        <h2>Zubereitung</h2>
+        <div class="badge_data">
+          <span class="badge"><img src="/src/img/clock-regular.svg" alt="Clock Image" style="margin-right: 5px;">15 Min.</span>
+          <span class="badge"><img src="/src/img/brain-solid.svg" alt="Brain Image" style="margin-right: 5px;"> simpel</span>
+        </div>
+          <p style="text-align: justify;">Tomaten, Gurken und Paprika waschen und in kleine Stücke schneiden. Die Zwiebel schälen und in feine Ringe oder Würfel schneiden. Alles in eine große Schüssel geben. Den Schafskäse zerbröseln und darüberstreuen. Olivenöl, Essig oder Zitronensaft hinzufügen und mit Salz und Pfeffer würzen. Zum Schluss mit gehackter Petersilie bestreuen. Alles vorsichtig vermischen und sofort servieren.</p>
+        </div>
+
+        <!-- Ersteller -->
+         <div class="author_data">
+          <h3>Rezept erstellt von</h3>
+          <div class="author">
+            <img src="/src/img/profile.png" alt="Rezept erstellt von">
+            <p>Altin</p>
+          </div>
+        </div>
+      </section>
+    </main>
+   
+    
+
+  <!-- ======================================================================================== -->
+
+    <!-- Footer -->
+    <footer>
+      <div>
+        <img
+          class="footer_logo"
+          src="./src/img/logo_footer_white.png"
+          alt="footer_logo"
+        />
+      </div>
+      <div class="social_media_group">
+        <a href="https://facebook.com"
+          ><img
+            class="social_media"
+            src="./src/img/facebook_white.png"
+            alt="Facebook Logo"
+        /></a>
+        <a href="https://instagram.com"
+          ><img
+            class="social_media"
+            src="./src/img/instagram_white.png"
+            alt="Instagram Logo"
+        /></a>
+        <a href="https://x.com"
+          ><img
+            class="social_media"
+            src="./src/img/x-logo-white.png"
+            alt="X Logo"
+        /></a>
+      </div>
+    </footer>
+    <!-- JS einbinden -->
+    <script src="src/js/burger_menu.js"></script>
+</body>
+</html>
