@@ -9,90 +9,112 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"/>
-    <script src="./src/js/contact.js"></script>
     <script src="./src/css/contact.css"></script>
-    <script src="./burger_menu.js"></script>
+    
     
 
-<title>Kontakt</title>
-<link rel="icon" type="image/small_png" href="./src/img/logo_small.png">
+    <title>Kontakt</title>
+    <link rel="icon" type="image/small_png" href="./src/img/logo_small.png">
 </head>
 
 
 <body>
+    <header>
+        <div class="container">   
+            <div class="navbar">
+                <a href="index.html">
+                    <img class="logo" src="./src/img/logo.png" alt="Kochwelt Logo"/>
+                    <img class="small_logo" src="./src/img/logo.png" alt="Kochwelt Small Logo"/>
+                </a>
 
-     
-        <header>
-            <div class="header_link"> 
-            <img class="logo" src="./src/img/logo.png" alt="Kochwelt Logo">
-            <nav class="nav_link">
-                <div class="link">
-                  <a class="links_menu" href="./index.html">Start</a>
-                  <a class="links_menu" href="">Rezept der Tages</a>
-                  <a class="links_menu" href="">Kontakt</a>
-                  <a class="links_menu" href="">Impressum</a>
+                    <nav class="nav_link">
+                        <ul class="link">
+                            <li><a class="links_menu" href="index.html">Start</a></li>
+                            <li><a class="links_menu" href="alb_rezept.html">Rezept der Tages</a></li>
+                            <li><a class="links_menu" href="contact.html">Kontakt</a></li>
+                            <li><a class="links_menu" href="impressum.html">Impressum</a></li>
+                        </ul>
+                    </nav>
+
+        
+                <div class="burger_menu">
+                    <button class="burger_menu">
+                        <span class="burger_line"></span>
+                        <span class="burger_line"></span>
+                        <span class="burger_line"></span>
+                    </button>
+
+                    <nav class="mobileNav">
+                        <ul class="menu">
+                        <li><a href="index.html">Start</a></li>
+                        <li><a href="alb_rezept.html">Rezept</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                        <li><a href="impressum.html">Impressum</a></li>
+                        </ul>
+                    </nav>
                 </div>
-            </nav>
             </div>
-    <div class="burger_menu">      
-        <button class="burger_menu" onclick="toggleMenu()">
-            <span class="burger_line"></span>
-            <span class="burger_line"></span>
-            <span class="burger_line"></span>
-        </button>
-        <nav class="d_none" onclick="toggleMenu()">
-          <ul class="menu">
-            <li><a href="">Start</a></li>
-            <li><a href="">Rezept</a></li>
-            <li><a href="">Kontakt</a></li>
-            <li><a href="">Impressum</a></li>
-          </ul>
-        </nav>
-    </div>
-        </header>
+        </div>
+    </header>
         <div class="header_line" ></div>
        
-        <br>
+    <main>
     
-<div class="contact_background">
-    <form action="/senden" method="post" onsubmit="sendMail(event)">
-        <p>Kontaktiere uns</hp>
+        <div>
+            <form class="contact_form" action="/senden" method="post" onsubmit="sendMail(event)">
+                <p>Kontaktiere uns</hp>
 
-            <div class="contact">
-                <div class="contact_date">
-                    <label>Name:</label>
-                        <input class="box shadow" type="text" id="name" name="name" required>
-                    </label>
-                </div>
-                <div class="contact_date">    
-                    <label for="email">E-Mail:</label>
-                        <input class="box shadow" id="email" type="email" name="email" required>
+                    <div class="contact">
+                        <div class="contact_date">
+                            <label>Name:</label>
+                                <input class="box shadow" type="text" id="name" name="name" required>
+                            </label>
+                        </div>
+                        <div class="contact_date">    
+                            <label for="email">E-Mail:</label>
+                                <input class="box shadow" id="email" type="email" name="email" required>
+                                </label>
+                        </div>
+                    </div>
+
+                    <div class="message">
+                        <label for="message">Ihre Nachricht:</label>
+                            <textarea class="message_box shadow" id="message" name="message" required></textarea>
                         </label>
-                </div>
-            </div>
+                    </div>
+                    <form class="send" >
+                        <button class="btn" type="submit">SENDEN</button>
+                    </form>   
+            </form>
+        </div>
 
-            <div class="message">
-                <label for="message">Ihre Nachricht:</label>
-                    <textarea class="message_box shadow" id="message" name="message" required></textarea>
-                </label>
-            </div>
-            <form class="send" >
-                <button class="btn" type="submit">SENDEN</button>
-            </form>   
-    </form>
-</div>
-
-
+    </main>
 
     <footer>
-          <div>
+        <div class="footer_container">
             <img class="footer_logo" src="./src/img/logo_footer_white.png" alt="footer_logo">
-          </div>
+          
+            <img class="footer_logo_white" src="./src/img/logo_small_white.png"
+            alt="Footer Logo Small"/>
+            <nav class="nav_link_footer">
+                <ul class="links_footer">
+                    <li>
+                        <a class="links_menu_footer" href="./impressum.html">Impressum</a>
+                    </li>
+                    <li>
+                        <a class="links_menu_footer" href="datenschutz.html">Datenschutz</a>
+                    </li>
+                </ul>
+            </nav>
+        
+
           <div class="social_media_group">
               <a href="https://facebook.com"><img class="social_media" src="./src/img/facebook_white.png" alt="Facebook Logo"></a>
               <a href="https://instagram.com"><img class="social_media" src="./src/img/instagram_white.png" alt="Instagram Logo"></a>
               <a href="https://x.com"><img class="social_media" src="./src/img/x-logo-white.png" alt="X Logo"></a>
           </div>
-</footer>
+        </div>  
+    </footer>
+<script src="./src/js/burger_menu.js"></script>
 </body>
 </html>
