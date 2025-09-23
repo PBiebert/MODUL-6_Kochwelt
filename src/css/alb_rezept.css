@@ -1,33 +1,34 @@
-/* Anfang der Section Albanischer Salat */
-
 :root {
-  /* Farbe */
   --grey: #dbdbdb;
   --footerColor: #242424;
   --buttonColor: #008000;
   --buttonColor: #008000;
 
-  /* Schriftarten */
   --primaryFont: "Raleway", sans-serif;
 }
 
-/* Überschrift */
+main {
+  display: flex;
+  justify-content: center;
+}
+
+
 .alb_salat > h1 {
-  margin-top: 4.5rem;
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
   align-self: flex-start;
 }
 
-/* Image */
+
 .alb_salat > img {
   width: 100%;
   height: 21rem;
   object-fit: cover;
   object-position: center;
   border-radius: 1rem;
-  margin: 2.75rem 0;
+  margin-bottom: 2.5rem;
 }
 
-/*  Zutaten - Bereich*/
 
 .badge_data {
   display: flex;
@@ -36,17 +37,16 @@
 }
 
 .badge {
-  display:inline-block;
-  padding:6px 10px; 
-  border-radius:16px; 
-  background:#f2f2f2; 
-  margin-right:8px; 
-  margin-top:22px; 
-  font-size:0.9rem
+  display: flex;
+  padding:0.5rem 0.5rem; 
+  border-radius:0.5rem; 
+  background-color: var(--grey); 
+  margin-bottom:1.75rem; 
 }
 
 .badge img {
-  width: 12px;
+  width: 1rem;
+  margin-right: 0.5rem;
 }
 
 
@@ -57,7 +57,6 @@
   background-color: var(--grey);
 }
 
-/* Zutaten + Portionen Rechner */
 
 .ingredients {
   align-self: flex-start;
@@ -76,6 +75,9 @@
   border: 1px solid var(--grey);
   border-radius: 0.5rem 0 0 0.5rem;
   font-weight: bold;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-size: 1rem;
 }
 
 .ingredients > button {
@@ -85,14 +87,15 @@
   border: none;
   border-radius: 0 0.5rem 0.5rem 0;
   color: white;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-size: 1rem;
 }
 
 
-/* Basis-Anzahl der Portionen */
-
 .liste {
   width: 100%;
-  margin-bottom: 3.25rem;
+  margin-bottom: 2rem;
   
 }
 
@@ -113,22 +116,17 @@
 }
 
 
-/* Zubereitung */
-
 .alb_salat > h2 {
-  margin-block-start: 0;
-  margin-block-end: 0;
   align-self: flex-start;
+  margin-bottom: 2rem;
 }
 
 .alb_salat > p {
   text-align: justify;
-  margin-top: 24px;
-  margin-bottom: 24px;
+  margin-top: 14px;
+  margin-bottom: 34px;
 }
 
-
-/* Ersteller */
 
 .author_data {
   display: flex;
@@ -140,7 +138,7 @@
   display: flex;
   align-items: center;
   margin-top: 2rem;
-  margin-bottom: 6rem;
+  margin-bottom: 2rem;
 }
 
 .author > img {
@@ -149,20 +147,22 @@
   padding-right: 1rem;
 }
 
-/* Ende der Section Albanischer Salat */
-
-/* ========================== */
-/* Responsive Anpassungen     */
-/* ========================== */
 
 @media (max-width: 1024px) {
   .alb_salat > img {
-    height: auto; 
+    height: 300px; 
   }
 
   .badge_data {
     flex-wrap: wrap; 
     gap: 1rem;
+  }
+}
+
+
+@media (max-width: 780px) {
+  .author {
+    margin-bottom: 0rem;
   }
 }
 
@@ -191,8 +191,8 @@
   }
 
   .author {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: center;
+    align-items: center;
   }
 
   .author > img {
@@ -200,11 +200,23 @@
   }
 }
 
+@media (max-width: 490px) {
+  .badge_data_header {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .alb_rezept > img {
+    width: 100%;
+    height: 200px;
+  }
+}
+
 @media (max-width: 480px) {
   .alb_salat > h1 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     text-align: center;
-    margin-top: 2rem;
+    padding-bottom: 2.5rem;
   }
 
   .alb_salat > h2 {
@@ -213,30 +225,16 @@
   }
 
   .alb_salat > p {
-    font-size: 0.95rem;
+    font-size: 1rem;
     text-align: left;
   }
 
   .badge {
-    font-size: 0.8rem;
+    font-size: 1rem;
     padding: 4px 8px;
   }
 
   .author > img {
     height: 4rem;
-  }
-}
-
-@media (max-width: 340px) {
-  .badge-container {
-    display: flex;
-    flex-direction: column;   
-    gap: 8px;                 
-    align-items: flex-start;  
-  }
-
-  .badge {
-    font-size: 0.8rem;        
-    padding: 4px 8px;         
   }
 }

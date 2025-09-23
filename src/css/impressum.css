@@ -1,4 +1,4 @@
-.containerImpressum {
+.container_impressum {
   padding: 0 75px;
 }
 
@@ -21,14 +21,33 @@ p {
   margin-bottom: 0.5rem;
 }
 
-@media (max-width: 650px) {
-  .containerImpressum {
+
+.dNone {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .container_impressum {
     padding: 0 2.5rem;
   }
 }
 
+@media (max-width: 650px) {
+  .container_impressum {
+    padding: 0 2rem;
+  }
+}
+
 @media (max-width: 450px) {
-  .impressum {
+  .container_impressum {
     padding: 0 1.5rem;
+  }
+
+  
+}
+
+@media (max-width: 350px) {
+  .dNone {
+    display: block;
   }
 }
