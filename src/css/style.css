@@ -265,7 +265,8 @@ a {
 
 /* Rezept des Tages - Altin*/
 .rezept_des_tages {
-  margin: 4.5rem 0 4.5rem 0;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -276,26 +277,28 @@ a {
 
 .hero_img {
   height: 300px;
-  width: 450px;
-  padding-right: 32px;
+  width: auto;
+  margin-right: 32px;
   display: block;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 8px 8px;
 }
 
 .hero_info h2 {
   font-size: 1.8rem;
-  margin-bottom: 20px; /* Abstand */
   text-align: left; /* Überschrift linksbündig */
+}
+
+.hero_info p {
+  padding: 1rem 0 1rem 0;
 }
 
 .hero_info .button {
   display: inline-block;
-  margin-top: 20px; /* Abstand nach unten zum Text */
   background-color: var(--buttonColor);
   color: #fff;
   padding: 10px 20px;
-  border-radius: 6px;
+  border-radius: 6px 6px;
   text-decoration: none;
   font-weight: bold;
 }
@@ -308,20 +311,35 @@ a {
 @media (max-width: 900px) {
   .rezept_des_tages {
     flex-direction: column;
-    padding: 50px 20px;
     align-items: center;
     text-align: center;
   }
 
+  .container {
+    padding: 35px 75px;
+  }
+
   .hero_img {
-    width: 100%;
-    height: auto;
-    margin: 20px 0;
-    border-radius: 8px; /* wenn mobil, rundherum Radius */
+    width: auto;
+    height: 300px;
+    margin: 0 0 20px 0;
   }
 
   .hero_info h2 {
     text-align: center;
+  }
+
+  .hero_info p {
+    text-align: center;
+    
+  }
+}
+
+@media (max-width: 550px) {
+  .hero_img {
+    width: 270px;
+    height: 200px;
+    margin: 0 0 20px 0;
   }
 }
 
