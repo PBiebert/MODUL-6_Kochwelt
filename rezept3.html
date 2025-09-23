@@ -3,57 +3,75 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Kochwelt</title>
+
     <link rel="shortcut icon" href="./src/img/logo.png" type="image/x-icon" />
 
-    <!-- Fonts extern einbinden -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
     <!-- CSS einbinden -->
     <link rel="stylesheet" href="./src/css/style.css" />
     <link rel="stylesheet" href="./src/css/rezept3.css" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/small_png" href="./src/img/logo_small.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/src/fav/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="/src/fav/favicon.svg" />
+    <link rel="shortcut icon" href="/src/fav/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/src/fav/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="Kochwelt" />
+    <link rel="manifest" href="/src/fav/site.webmanifest" />
   </head>
 
   <body>
     <!-- Navigationsleiste Web -->
-    <header>
-      <img class="logo" src="./src/img/logo.png" alt="Kochwelt Logo" />
-      <nav class="nav_link">
-        <div class="link">
-          <a class="links_menu" href="">Start</a>
-          <a class="links_menu" href="">Rezept der Tages</a>
-          <a class="links_menu" href="">Kontakt</a>
-          <a class="links_menu" href="">Impressum</a>
-        </div>
-      </nav>
+    <header class="container">
+      <div class="navbar">
+        <a href="index.html">
+          <img class="logo" src="./src/img/logo.png" alt="Kochwelt Logo" />
+          <img
+            class="small_logo"
+            src="./src/img/logo.png"
+            alt="Kochwelt Small Logo"
+        /></a>
 
-      <!-- ======================================================================================== -->
-
-      <!-- Navigationsleiste mobil  -->
-      <!-- Burger Menü -->
-      <div class="burger_menu">
-        <button class="burger_menu">
-          <span class="burger_line"></span>
-          <span class="burger_line"></span>
-          <span class="burger_line"></span>
-        </button>
-
-        <!-- Navbar -->
-        <nav class="mobileNav">
-          <ul class="menu">
-            <li><a href="">Start</a></li>
-            <li><a href="">Rezept</a></li>
-            <li><a href="./contact.html">Kontakt</a></li>
-            <li><a href="">Impressum</a></li>
+        <nav class="nav_link">
+          <ul class="link">
+            <li><a class="links_menu" href="">Start</a></li>
+            <li><a class="links_menu" href="">Rezept der Tages</a></li>
+            <li><a class="links_menu" href="contact.html">Kontakt</a></li>
+            <li><a class="links_menu" href="">Impressum</a></li>
           </ul>
         </nav>
+
+        <!-- ======================================================================================== -->
+
+        <!-- Navigationsleiste mobil  -->
+        <!-- Burger Menü -->
+        <div class="burger_menu">
+          <button class="burger_menu">
+            <span class="burger_line"></span>
+            <span class="burger_line"></span>
+            <span class="burger_line"></span>
+          </button>
+
+          <!-- Navbar -->
+          <nav class="mobileNav">
+            <ul class="menu">
+              <li><a href="">Start</a></li>
+              <li><a href="">Rezept</a></li>
+              <li><a href="./contact.html">Kontakt</a></li>
+              <li><a href="">Impressum</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 
@@ -87,74 +105,80 @@
         <!-- Mengen Rechner -->
         <div class="quantities">
           <p>Zutaten für</p>
-          <input type="number" name="Number" id="quantitiesNumber" value="2" />
-          <button type="button">Portionen</button>
+          <input
+            type="number"
+            name="Number"
+            id="quantitiesNumber"
+            min="1"
+            value="2"
+          />
+          <button type="button" id="button">Portionen</button>
         </div>
 
         <!-- Zutaten Tabelle -->
         <div class="table">
           <div class="tableRow">
-            <span class="crowd">280</span>
+            <span class="crowd" data-crowd="140">280</span>
             <span>g</span>
-            <span>Veganes Steak</span>
+            <span>Steak</span>
           </div>
           <div class="tableRow">
-            <span class="crowd">600</span>
+            <span class="crowd" data-crowd="300">600</span>
             <span>g</span>
             <span>mehligk. Kartoffeln</span>
           </div>
           <div class="tableRow">
-            <span class="crowd">150</span>
+            <span class="crowd" data-crowd="75">150</span>
             <span>g</span>
             <span>Buschbohnen</span>
           </div>
           <div class="tableRow">
-            <span class="crowd">1</span>
+            <span class="crowd" data-crowd="0.5">1</span>
             <span>Stk</span>
             <span>Schalotte</span>
           </div>
           <div class="tableRow">
-            <span class="crowd">1</span>
+            <span class="crowd" data-crowd="0.5">1</span>
             <span>Stk</span>
             <span>Knoblauchzehe</span>
           </div>
           <div class="tableRow">
-            <span class="crowd">12</span>
+            <span class="crowd" data-crowd="6">12</span>
             <span>g</span>
             <span>Balsamico Creme</span>
           </div>
           <div class="tableRow">
-            <span class="crowd">40</span>
+            <span class="crowd" data-crowd="20">40</span>
             <span>g</span>
             <span>Pflaumenkonfitüre</span>
           </div>
           <div class="tableRow">
-            <span class="crowd">25</span>
+            <span class="crowd" data-crowd="12.5">25</span>
             <span>g</span>
             <span>Semmelbrösel</span>
           </div>
           <div class="tableRow">
-            <span class="crowd">100</span>
+            <span class="crowd" data-crowd="50">100</span>
             <span>ml</span>
             <span>Wasser</span>
           </div>
           <div class="tableRow">
-            <span class="crowd">4</span>
+            <span class="crowd" data-crowd="2">4</span>
             <span>El</span>
             <span>Butter</span>
           </div>
           <div class="tableRow">
-            <span class="crowd">50</span>
+            <span class="crowd" data-crowd="25">50</span>
             <span>ml</span>
             <span>Milch</span>
           </div>
           <div class="tableRow">
-            <span class="crowd"></span>
+            <span class="crowd" data-crowd=""></span>
             <span>nach Geschmack</span>
             <span>Pfeffer</span>
           </div>
           <div class="tableRow">
-            <span class="crowd"></span>
+            <span class="crowd" data-crowd=""></span>
             <span>nach Geschmack</span>
             <span>Salz</span>
           </div>
@@ -165,7 +189,7 @@
         <!-- Zeitangaben -->
         <div class="preparationData">
           <div class="preparation">
-            <img src="src/img/clock-regular.svg" />30 min
+            <img src="src/img/clock-regular.svg" />30 min Arbeitszeit
           </div>
           <div class="preparation">
             <img src="src/img/clock-regular.svg" />35 min Gesamtzeit
@@ -218,8 +242,8 @@
           <div class="step">
             <p class="stepNumber">5.</p>
             <p>
-              In einer großen Pfanne 1 EL Öl erhitzen. Vegane Steaks darin 3 – 4
-              Min. pro Seite goldbraun anbraten. Beim Wenden 1 EL Butter und
+              In einer großen Pfanne 1 EL Öl erhitzen. Steaks darin 3 – 4 Min.
+              pro Seite goldbraun anbraten. Beim Wenden 1 EL Butter und
               Schalotte dazugeben. Steaks nach der Garzeit herausnehmen und
               ggfs. warmhalten. Pfanneninhalt mit vorbereiteter Soße ablöschen
               und 2 – 3 Min. köcheln lassen, bis die Soße dickflüssig ist. Mit
@@ -229,10 +253,10 @@
           <div class="step">
             <p class="stepNumber">6.</p>
             <p>
-              Vegane Steaks in feine Scheiben schneiden und auf einer Seite
-              eines Tellers anrichten. Kartoffelpüree daneben geben und mithilfe
-              eines Kochlöffels ausstreichen. Knoblauch-Bohnen darauf geben und
-              mit gerösteten Semmelbröseln garnieren. Nach Belieben mit Soße
+              Steaks in feine Scheiben schneiden und auf einer Seite eines
+              Tellers anrichten. Kartoffelpüree daneben geben und mithilfe eines
+              Kochlöffels ausstreichen. Knoblauch-Bohnen darauf geben und mit
+              gerösteten Semmelbröseln garnieren. Nach Belieben mit Soße
               begießen. Guten Appetit!
             </p>
           </div>
@@ -253,35 +277,59 @@
 
     <!-- Footer -->
     <footer>
-      <div>
-        <img
-          class="footer_logo"
-          src="./src/img/logo_footer_white.png"
-          alt="footer_logo"
-        />
-      </div>
-      <div class="social_media_group">
-        <a href="https://facebook.com"
-          ><img
-            class="social_media"
-            src="./src/img/facebook_white.png"
-            alt="Facebook Logo"
+      <div class="footerContainer container">
+        <!-- Logo -->
+        <a href="index.html">
+          <img
+            class="footer_logo"
+            src="./src/img/logo_footer_white.png"
+            alt="Footer Logo" />
+          <img
+            class="footer_logo_white"
+            src="./src/img/logo_small_white.png"
+            alt="Footer Logo Small"
         /></a>
-        <a href="https://instagram.com"
-          ><img
-            class="social_media"
-            src="./src/img/instagram_white.png"
-            alt="Instagram Logo"
-        /></a>
-        <a href="https://x.com"
-          ><img
-            class="social_media"
-            src="./src/img/x-logo-white.png"
-            alt="X Logo"
-        /></a>
+        <!-- Links -->
+        <nav class="nav_link_footer">
+          <ul class="links_footer">
+            <li><a class="links_menu_footer" href="">Impressum</a></li>
+            <li>
+              <a class="links_menu_footer" href="datenschutz.html"
+                >Datenschutz</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Social Media -->
+        <div class="social_media_group">
+          <a href="https://facebook.com">
+            <img
+              class="social_media"
+              src="./src/img/facebook_white.png"
+              alt="Facebook Logo"
+            />
+          </a>
+          <a href="https://instagram.com">
+            <img
+              class="social_media"
+              src="./src/img/instagram_white.png"
+              alt="Instagram Logo"
+            />
+          </a>
+          <a href="https://x.com">
+            <img
+              class="social_media"
+              src="./src/img/x-logo-white.png"
+              alt="X Logo"
+            />
+          </a>
+        </div>
       </div>
     </footer>
+
     <!-- JS einbinden -->
     <script src="src/js/burger_menu.js"></script>
+    <script src="src/js/IngredientsCalculator.js"></script>
   </body>
 </html>

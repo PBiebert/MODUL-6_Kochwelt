@@ -1,3 +1,45 @@
+/* 
+  Einbindung der Schriftart "Raleway" über @font-face:
+
+  1. font-family: "Raleway";
+     - Definiert den Namen der Schriftart, wie sie im CSS später verwendet wird.
+     - Beispiel: font-family: "Raleway", sans-serif;
+
+  2. src: url(../fonts/Raleway-VariableFont_wght.ttf) format("truetype");
+     - Legt den Pfad zur Schriftdatei fest (relativ zum CSS-File).
+     - format("truetype") gibt den Dateityp an, hier eine TrueType-Schrift.
+
+  3. font-weight: 100 900;
+     - Definiert den Gewichtsbereich der Schrift (Variable Font von dünn bis fett).
+     - Bei normaler Schrift kann man hier z.B. nur 400 setzen.
+
+  4. font-style: normal / italic;
+     - Gibt an, ob die Schrift normal oder kursiv dargestellt wird.
+     - Hier wird jeweils eine Variante für normal und kursiv definiert.
+
+  Nutzung im CSS:
+  ---------------------------------
+  body {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;  // beliebiges Gewicht zwischen 100 und 900
+    font-style: normal; // oder italic
+  }
+*/
+
+@font-face {
+  font-family: "Raleway";
+  src: url(../fonts/Raleway-VariableFont_wght.ttf) format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url(../fonts/Raleway-VariableFont_wght.ttf) format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+}
+
 :root {
   /* Farbe */
   --grey: #dbdbdb;
@@ -21,10 +63,23 @@ html {
   scroll-behavior: smooth;
 }
 
+.logo {
+  width: 400px;
+}
+.small_logo {
+  display: none;
+}
+
+.footer_logo_white {
+  display: none;
+}
 /* Text-Grundlagen */
 body {
   font-size: 16px; /* Standartschriftgröße*/
   font-family: var(--primaryFont); /* Standartschriftart*/
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
 }
 
 h1 {
@@ -62,6 +117,10 @@ figcaption {
   margin-top: 1rem;
 }
 
+a {
+  color: black;
+}
+
 .container {
   width: 100%;
   max-width: 1920px;
@@ -86,27 +145,27 @@ figcaption {
 /* ================================================================================================ */
 
 /* Navigationsleiste - Refiye*/
-header {
+.navbar {
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: flex-end;
-  padding-left: 50px;
-  padding-right: 50px;
   padding-bottom: 8px;
   height: 144px;
 }
 
 .link {
+  display: flex;
   font-family: var(--primaryFont);
   font-weight: 700;
   font-size: 24px;
   gap: 30px;
-  display: flex;
-  align-items: flex-end;
+  list-style: none;
 }
 
 .links_menu {
   text-decoration: none;
+  color: #000000;
 }
 
 .links_menu:hover {
@@ -153,16 +212,15 @@ header {
 
 .mobileNav {
   position: absolute;
-  right: 0;
+  right: 0px;
   top: 9rem;
   height: auto;
-  display: flex;
   align-items: center;
   justify-content: center;
   text-align: right;
   display: none;
   padding: 1rem 50px;
-  border-radius: 0 0 0 2rem;
+  border-radius: 0 0 2rem 2rem;
   background-color: var(--grey);
   z-index: 0;
 }
@@ -298,13 +356,14 @@ figcaption {
   height: 18.5rem;
   border-radius: 0.5rem;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .recipe img {
-  width: 100%;
+  width: auto;
   height: 100%;
-  aspect-ratio: 1/1;
-
   transition: all 125ms;
 }
 
@@ -333,12 +392,32 @@ figcaption {
 }
 
 .panVsWokContent p {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
+.links_footer {
+  font-family: var(--primaryFont);
+  font-weight: normal;
+  font-size: 16px;
+  gap: 30px;
+  display: flex;
+  align-items: flex-end;
+  list-style: none;
+}
+
+.links_menu_footer {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.links_menu_footer:hover {
+  text-decoration: underline 5px solid;
+  text-underline-offset: 12px;
+  text-decoration-thickness: 6px;
+  color: #008000;
+}
 /* ================================================================================================ */
 
-/* #region @media PB*/
 @media (max-width: 1300px) {
   /* "Lust auf mehr" PB*/
   .imgContainer {
@@ -497,14 +576,18 @@ figcaption {
 /* Footer - Refiye*/
 footer {
   background-color: var(--footerColor);
-  height: 244px;
   width: 100%;
   display: flex;
+  justify-content: center;
+}
+
+.footerContainer {
+  width: 100%;
+  height: 150px;
   align-items: center;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  padding-left: 50px;
-  padding-right: 50px;
 }
 
 .footer_logo {
@@ -543,28 +626,106 @@ footer {
 
 /* Mediaquerries aus Nav - Refiye*/
 
-@media (max-width: 1250px) {
+/* .burger_line {
+    /* height: 5px;
+    width: 34px;
+    background-color: black;
+  } */
+
+@media (max-width: 1325px) {
+  /* Navbar */
+  .link {
+    font-size: 20px;
+    gap: 25px;
+  }
+}
+
+/* Wird nicht benötigt */
+/* @media (max-width: 1286px) {
+  .link {
+    font-size: 18px;
+    gap: 25px;
+  }
+} */
+
+@media (max-width: 1200px) {
+  .logo {
+    width: 300px;
+  }
+}
+
+/* Wird nicht benötigt */
+/* @media (max-width: 1032px) {
+  .link {
+    gap: 20px;
+  }
+  .logo {
+    width: 300px;
+  }
+} */
+
+@media (max-width: 960px) {
+  .navbar {
+    height: 110px;
+  }
+
+  .logo {
+    width: 250px;
+  }
+  .social_media {
+    width: 30px;
+  }
+  .footer_logo {
+    height: 70px;
+  }
+  .footerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .links_footer {
+    gap: 10px;
+    display: flex;
+  }
+
   .nav_link {
     display: none;
   }
   .burger_menu {
     display: flex;
   }
+}
 
-  /* .burger_line {
-    /* height: 5px;
-    width: 34px;
-    background-color: black;
-  } */
+@media (max-width: 850px) {
+  .logo {
+    display: none;
+  }
+  .small_logo {
+    display: flex;
+    width: 250px;
+  }
+}
+
+@media (max-width: 780px) {
+  .footer_logo {
+    height: 40px;
+  }
+  .social_media_group {
+    gap: 5px;
+  }
+  .social_media {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 @media (max-width: 752px) {
-  .logo {
-    height: 95px;
-  }
-
   .footer_logo {
-    height: 50px;
+    display: none;
+  }
+  .footer_logo_white {
+    display: block;
+    width: 70px;
   }
   .social_media_group {
     gap: 5px;
@@ -576,40 +737,40 @@ footer {
 }
 
 @media (max-width: 553px) {
-  .logo {
-    height: 75px;
-  }
   .footer_logo {
     height: 40px;
   }
 }
 
 @media (max-width: 535px) {
-  logo {
-    height: 65px;
+  .social_media_group {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 4px;
+    padding-right: 16px;
   }
 
-  .social_media_group {
-    gap: 3px;
-  }
   .social_media {
-    width: 15px;
-    height: 15px;
+    width: 22px;
+    height: 22px;
   }
 }
 
-@media (max-width: 466px) {
-  .logo {
-    height: 40px;
+@media (max-width: 400px) {
+  .small_logo {
+    width: 200px;
   }
-  .footer_logo {
-    height: 30px;
+
+  .footer_logo_white {
+    width: 50px;
   }
-  .social_media_group {
-    gap: 2px;
-  }
-  .social_media {
-    width: 15px;
-    height: 15px;
+
+  .links_footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
   }
 }

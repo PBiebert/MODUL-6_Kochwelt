@@ -4,7 +4,8 @@
 
 .datenschutz {
   margin-bottom: 2rem;
-  overflow-wrap: break-word;
+  overflow-wrap: break-word; /* bricht Wörter */
+  word-break: break-word; /* fallback */
 }
 
 h1 {
@@ -33,9 +34,15 @@ li {
   display: none;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 768px) {
   .containerDatenschutz {
     padding: 0 2.5rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .containerDatenschutz {
+    padding: 0 2rem;
   }
 }
 

@@ -3,49 +3,73 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Kochwelt</title>
+
     <link rel="shortcut icon" href="./src/img/logo.png" type="image/x-icon" />
 
-    <!-- Fonts extern einbinden -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
     <!-- CSS einbinden -->
     <link rel="stylesheet" href="./src/css/style.css" />
     <script src="burger_menu.js"></script>
     <title>Kochwelt</title>
-    <link rel="icon" type="image/small_png" href="./src/img/logo_small.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/src/fav/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="/src/fav/favicon.svg" />
+    <link rel="shortcut icon" href="/src/fav/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/src/fav/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="Kochwelt" />
+    <link rel="manifest" href="/src/fav/site.webmanifest" />
   </head>
 
   <body>
-    <header>
-      <img class="logo" src="./src/img/logo.png" alt="Kochwelt Logo" />
-      <nav class="nav_link">
-        <div class="link">
-          <a class="links_menu" href="">Start</a>
-          <a class="links_menu" href="">Rezept der Tages</a>
-          <a class="links_menu" href="">Kontakt</a>
-          <a class="links_menu" href="">Impressum</a>
-        </div>
-      </nav>
+    <header class="container">
+      <div class="navbar">
+        <a href="index.html">
+          <img class="logo" src="./src/img/logo.png" alt="Kochwelt Logo" />
+          <img
+            class="small_logo"
+            src="./src/img/logo.png"
+            alt="Kochwelt Small Logo"
+        /></a>
 
-      <div class="burger_menu">
-        <button class="burger_menu" onclick="toggleMenu()">
-          <span class="burger_line"></span>
-          <span class="burger_line"></span>
-          <span class="burger_line"></span>
-        </button>
-        <nav class="d_none" onclick="toggleMenu()">
-          <ul class="menu">
-            <li><a href="">Start</a></li>
-            <li><a href="">Rezept</a></li>
-            <li><a href="./contact.html">Kontakt</a></li>
-            <li><a href="">Impressum</a></li>
+        <nav class="nav_link">
+          <ul class="link">
+            <li><a class="links_menu" href="">Start</a></li>
+            <li><a class="links_menu" href="">Rezept der Tages</a></li>
+            <li><a class="links_menu" href="">Kontakt</a></li>
+            <li><a class="links_menu" href="">Impressum</a></li>
           </ul>
         </nav>
+
+        <!-- ======================================================================================== -->
+
+        <!-- Navigationsleiste mobil  -->
+        <!-- Burger Menü -->
+        <div class="burger_menu">
+          <button class="burger_menu">
+            <span class="burger_line"></span>
+            <span class="burger_line"></span>
+            <span class="burger_line"></span>
+          </button>
+
+          <!-- Navbar -->
+          <nav class="mobileNav">
+            <ul class="menu">
+              <li><a href="">Start</a></li>
+              <li><a href="">Rezept</a></li>
+              <li><a href="./contact.html">Kontakt</a></li>
+              <li><a href="">Impressum</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <div class="header_line"></div>
@@ -80,9 +104,9 @@
 
           <!-- #2 -->
           <figure class="recipe">
-            <a href="#">
+            <a href="feigensalat.html">
               <div class="imgContainer">
-                <img src="src/img/croissant.jpg" alt="" />
+                <img src="src/img/feigensalat.jpg" alt="" />
               </div>
             </a>
             <figcaption>Rezept Refiye</figcaption>
@@ -127,33 +151,58 @@
     </article>
 
     <footer>
-      <div>
-        <img
-          class="footer_logo"
-          src="./src/img/logo_footer_white.png"
-          alt="footer_logo"
-        />
-      </div>
-      <div class="social_media_group">
-        <a href="https://facebook.com"
-          ><img
-            class="social_media"
-            src="./src/img/facebook_white.png"
-            alt="Facebook Logo"
+      <div class="footerContainer container">
+        <!-- Logo -->
+        <a href="index.html">
+          <img
+            class="footer_logo"
+            src="./src/img/logo_footer_white.png"
+            alt="Footer Logo" />
+          <img
+            class="footer_logo_white"
+            src="./src/img/logo_small_white.png"
+            alt="Footer Logo Small"
         /></a>
-        <a href="https://instagram.com"
-          ><img
-            class="social_media"
-            src="./src/img/instagram_white.png"
-            alt="Instagram Logo"
-        /></a>
-        <a href="https://x.com"
-          ><img
-            class="social_media"
-            src="./src/img/x-logo-white.png"
-            alt="X Logo"
-        /></a>
+        <!-- Links -->
+        <nav class="nav_link_footer">
+          <ul class="links_footer">
+            <li><a class="links_menu_footer" href="">Impressum</a></li>
+            <li>
+              <a class="links_menu_footer" href="datenschutz.html"
+                >Datenschutz</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Social Media -->
+        <div class="social_media_group">
+          <a href="https://facebook.com">
+            <img
+              class="social_media"
+              src="./src/img/facebook_white.png"
+              alt="Facebook Logo"
+            />
+          </a>
+          <a href="https://instagram.com">
+            <img
+              class="social_media"
+              src="./src/img/instagram_white.png"
+              alt="Instagram Logo"
+            />
+          </a>
+          <a href="https://x.com">
+            <img
+              class="social_media"
+              src="./src/img/x-logo-white.png"
+              alt="X Logo"
+            />
+          </a>
+        </div>
       </div>
     </footer>
+
+    <!-- JS einbinden -->
+    <script src="./src/js/burger_menu.js"></script>
   </body>
 </html>
