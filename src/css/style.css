@@ -63,6 +63,13 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
 .logo {
   width: 400px;
 }
@@ -166,6 +173,7 @@ a {
 .links_menu {
   text-decoration: none;
   color: #000000;
+  height: 100%;
 }
 
 .links_menu:hover {
@@ -213,7 +221,7 @@ a {
 .mobileNav {
   position: absolute;
   right: 0px;
-  top: 9rem;
+  top: 144px;
   height: auto;
   align-items: center;
   justify-content: center;
@@ -223,6 +231,30 @@ a {
   border-radius: 0 0 2rem 2rem;
   background-color: var(--grey);
   z-index: 0;
+  box-shadow: 0 4px 5px 1px rgb(0, 0, 0);
+}
+
+/* @media (max-width: 1150px) {
+  .mobileNav {
+    margin-right: 75px;
+    padding: 3rem;
+  }
+} */
+
+@media (max-width: 960px) {
+  .mobileNav {
+    top: 115px;
+    margin-right: calc(75px - 48px);
+    padding: 3rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .mobileNav {
+    margin-right: 0;
+    padding: 1rem;
+    border-radius: 0 0 0 2rem;
+  }
 }
 
 .mobileNav > ul {
@@ -241,7 +273,8 @@ a {
 
 .mobileNav > ul li a:hover {
   color: var(--buttonColor);
-  text-decoration: none;
+  text-decoration: underline 2px solid;
+  color: #008000;
 }
 
 /* navActive */
@@ -255,8 +288,8 @@ a {
   position: relative;
   border: 1px solid;
   padding: 0;
-  box-shadow: 4px 4px 5px #888888;
-  color: #fff;
+  box-shadow: 0 4px 5px #888888;
+  color: transparent;
   width: 100%;
   z-index: 2;
 }
@@ -301,12 +334,24 @@ a {
   border-radius: 6px 6px;
   text-decoration: none;
   font-weight: bold;
+  margin-top: calc(300px - (33.6px + 108.8px + 39.2px));
 }
 
 .hero_info .button:hover {
   background-color: #0b6538; /* dunkleres Grün */
 }
 
+@media (max-width: 1001px) {
+  .hero_info .button {
+    margin-top: calc(300px - (33.6px + 128px + 39.2px));
+  }
+}
+
+@media (max-width: 950px) {
+  .hero_info .button {
+    margin-top: calc(300px - (33.6px + 147.2px + 39.2px));
+  }
+}
 
 @media (max-width: 900px) {
   .rezept_des_tages {
@@ -315,8 +360,8 @@ a {
     text-align: center;
   }
 
-  .container {
-    padding: 35px 75px;
+  .hero_info .button {
+    margin-top: 38.8px;
   }
 
   .hero_img {
@@ -331,7 +376,6 @@ a {
 
   .hero_info p {
     text-align: center;
-    
   }
 }
 
@@ -597,6 +641,7 @@ footer {
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-grow: 1;
 }
 
 .footerContainer {

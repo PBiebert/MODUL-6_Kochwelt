@@ -137,10 +137,19 @@ main {
   margin-bottom: 6rem;
 }
 
-.editor > img {
+.imageDiv {
+  overflow: hidden;
   height: 6rem;
+  width: 6rem;
   border-radius: 50%;
-  padding-right: 1rem;
+  background-color: #008000;
+  margin-right: 1rem;
+}
+
+.editor img {
+  width: 6rem;
+  height: auto;
+  object-fit: cover;
 }
 
 /* Mediaquerries */
