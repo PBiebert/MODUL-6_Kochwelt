@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 75px;
+  padding: 0 150px;
 }
 
 .datenschutz {
@@ -33,6 +33,7 @@ p {
 }
 
 li {
+  margin-left: 1.5rem;
   margin-bottom: 0.5rem;
 }
 
@@ -40,15 +41,15 @@ li {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1150px) {
   .containerDatenschutz {
-    padding: 0 2.5rem;
+    padding: 0 75px;
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 550px) {
   .containerDatenschutz {
-    padding: 0 2rem;
+    padding: 0 16px;
   }
 }
 

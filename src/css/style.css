@@ -451,6 +451,7 @@ figcaption {
   height: 18.5rem;
   border-radius: 0.5rem;
   margin-left: 5rem;
+  object-fit: cover;
 }
 
 .panVsWokContent p {

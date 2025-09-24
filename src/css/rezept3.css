@@ -190,14 +190,13 @@ main {
     margin-top: 2rem;
     margin-bottom: 3rem;
   }
- 
+
   .container {
     padding: 0 30px;
   }
 }
 
 @media (max-width: 560px) {
-
   .container {
     padding: 0 20px;
   }
@@ -212,11 +211,14 @@ main {
     width: 50%;
   }
   .container {
-    padding: 0 10px,
+    padding: 0 10px;
   }
 }
 
-@media (max-width: 471px) {
+@media (max-width: 480px) {
+  .preparationData {
+    width: 100%;
+  }
 
   .container {
     padding: 0 20px;
@@ -230,7 +232,7 @@ main {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 450px) {
   /* Zubereitungs Daten */
   .preparationData {
     flex-direction: column;

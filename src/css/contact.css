@@ -6,15 +6,19 @@
 html {
   scroll-behavior: smooth;
 }
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 main {
   display: flex;
   align-items: center;
   justify-content: center;
-  }
+  flex: 1;
+}
 
 .logo {
   width: 400px;
@@ -46,8 +50,11 @@ header {
   flex-direction: column;
 }
 
+input {
+  padding: 0.5rem;
+}
 
-.navbar{
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -174,8 +181,7 @@ footer {
   align-items: center;
   justify-content: center;
   width: 100%;
-  }
-
+}
 
 .footer_container {
   width: 100%;
@@ -192,7 +198,7 @@ footer {
 .footer_logo {
   height: 90px;
   object-fit: contain;
-   padding-left: 50px;
+  padding-left: 50px;
 }
 
 .social_media {
@@ -205,7 +211,6 @@ footer {
   display: flex;
   gap: 25px;
 }
-
 
 p {
   font-family: "Raleway", sans-serif;
@@ -220,13 +225,12 @@ p {
 }
 
 .contact_form {
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
 }
-
 
 .contact_date {
   display: flex;
@@ -243,31 +247,31 @@ padding: 50px;
 }
 
 label {
-  font-family: "Raleway" , sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 24px;
 }
 
 .box {
-    width: 300px;
-    height: 40px;
-    border-color: #9e9b9b;   
+  width: 300px;
+  height: 40px;
+  border-color: #9e9b9b;
 }
 
 .shadow {
   box-shadow: 1px 3px 13px #333;
 }
 .btn {
-    font-family: "Raleway" , sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    padding:5px 30px;
-    height: 40px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 5px 30px;
+  height: 40px;
 }
 .btn:hover {
-    background-color: #008000;
-    cursor: pointer;
-    color: #f6f6f6;    
+  background-color: #008000;
+  cursor: pointer;
+  color: #f6f6f6;
 }
 
 .message {
@@ -281,14 +285,12 @@ label {
   margin-bottom: 24px;
 }
 
-input:invalid, textarea:valid {
+input:invalid,
+textarea:valid {
   border: 2px solid #3033;
 }
 
-
-
 @media (max-width: 1325px) {
- 
   .link {
     font-size: 20px;
     gap: 25px;
@@ -335,8 +337,7 @@ input:invalid, textarea:valid {
   }
 }
 
-
-@media (max-width: 752px) {
+@media (max-width: 800px) {
   .footer_logo {
     display: none;
   }
@@ -361,17 +362,16 @@ input:invalid, textarea:valid {
     width: 20px;
     height: 20px;
   }
-    .contact {
+  .contact {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; 
-      }
-    #message {
-      width: 447px;
-      height: 175px;
-    }
-  
+    flex-direction: column;
+  }
+  #message {
+    width: 447px;
+    height: 175px;
+  }
 }
 
 @media (max-width: 550px) {
@@ -380,7 +380,7 @@ input:invalid, textarea:valid {
   }
 }
 
-@media(max-width: 535px) {
+@media (max-width: 550px) {
   .social_media_group {
     display: flex;
     justify-content: flex-start;
@@ -406,10 +406,23 @@ input:invalid, textarea:valid {
   }
 }
 
-
-@media(max-width:435px){
+@media (max-width: 450px) {
   .footer_container {
     padding: 25px;
+  }
+
+  .box {
+    width: 250px;
+    height: 40px;
+    border-color: #9e9b9b;
+  }
+
+  #message {
+    width: 250px;
+  }
+
+  .contact_form {
+    padding: 16px;
   }
 }
 
@@ -431,22 +444,18 @@ input:invalid, textarea:valid {
   }
 }
 
-@media(max-width:390px){
-
-p {
-  font-size: 26px;
-}
-footer {
-  display: flex;
-  gap: 10px;
-}
-.footer_logo {
+@media (max-width: 390px) {
+  p {
+    font-size: 26px;
+  }
+  footer {
+    display: flex;
+    gap: 10px;
+  }
+  .footer_logo {
     width: 300px;
   }
-.logo {
-  width: 200px;
-}
-#message {
-  width: 300px;
-}
+  .logo {
+    width: 200px;
+  }
 }

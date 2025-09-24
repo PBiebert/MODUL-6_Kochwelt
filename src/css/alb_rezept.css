@@ -12,13 +12,11 @@ main {
   justify-content: center;
 }
 
-
 .alb_salat > h1 {
   padding-top: 4.5rem;
   padding-bottom: 4.5rem;
   align-self: flex-start;
 }
-
 
 .alb_salat > img {
   width: 100%;
@@ -29,7 +27,6 @@ main {
   margin-bottom: 2.5rem;
 }
 
-
 .badge_data {
   display: flex;
   align-self: flex-start;
@@ -38,10 +35,10 @@ main {
 
 .badge {
   display: flex;
-  padding:0.5rem 0.5rem; 
-  border-radius:0.5rem; 
-  background-color: var(--grey); 
-  margin-bottom:1.75rem; 
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--grey);
+  margin-bottom: 1.75rem;
 }
 
 .badge img {
@@ -49,14 +46,12 @@ main {
   margin-right: 0.5rem;
 }
 
-
 .line {
   height: 1px;
   width: 100%;
   margin: 1.25rem 0;
   background-color: var(--grey);
 }
-
 
 .ingredients {
   align-self: flex-start;
@@ -92,29 +87,26 @@ main {
   font-size: 1rem;
 }
 
-
 .liste {
   width: 100%;
   margin-bottom: 2rem;
-  
 }
 
-.ingredient{
+.ingredient {
   list-style-type: none;
-  background-color: var(--grey);  
-  padding: 1.25rem; 
-  margin-bottom:0; 
-  border-radius: 0.5rem; 
-} 
+  background-color: var(--grey);
+  padding: 1.25rem;
+  margin-bottom: 0;
+  border-radius: 0.5rem;
+}
 
 .meine-liste li:nth-child(odd) {
   background-color: var(--grey);
 }
 
 .meine-liste li:nth-child(even) {
-  background-color: white; 
+  background-color: white;
 }
-
 
 .alb_salat > h2 {
   align-self: flex-start;
@@ -126,7 +118,6 @@ main {
   margin-top: 14px;
   margin-bottom: 34px;
 }
-
 
 .author_data {
   display: flex;
@@ -147,18 +138,16 @@ main {
   padding-right: 1rem;
 }
 
-
 @media (max-width: 1024px) {
   .alb_salat > img {
-    height: 300px; 
+    height: 300px;
   }
 
   .badge_data {
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     gap: 1rem;
   }
 }
-
 
 @media (max-width: 780px) {
   .author {
@@ -168,7 +157,7 @@ main {
 
 @media (max-width: 768px) {
   .ingredients {
-    flex-direction: column; 
+    flex-direction: column;
     align-items: stretch;
     width: 100%;
   }
@@ -203,6 +192,7 @@ main {
 @media (max-width: 490px) {
   .badge_data_header {
     flex-direction: column;
+    width: 100%;
     gap: 0;
   }
 

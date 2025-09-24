@@ -1,14 +1,9 @@
-.container_impressum {
-  padding: 0 75px;
-}
-
 .impressum {
   margin-bottom: 2rem;
   overflow-wrap: break-word;
-  
 }
 
- h1 {
+h1 {
   margin-top: 2rem;
 }
 
@@ -20,7 +15,6 @@ h3 {
 p {
   margin-bottom: 0.5rem;
 }
-
 
 .dNone {
   display: none;
@@ -42,8 +36,6 @@ p {
   .container_impressum {
     padding: 0 1.5rem;
   }
-
-  
 }
 
 @media (max-width: 350px) {
